@@ -6,15 +6,8 @@ from django.core.exceptions import ValidationError
 
 from unidecode import unidecode
 
+
 User = get_user_model()
-
-
-# TAGS = (("Завтрак", "Завтрак"), ("Обед", "Обед"), ("Ужин", "Ужин"))
-
-
-# class Tags(models.Model):
-#     name = models.CharField("Название", max_length=50, choices=TAGS)
-#     slug = models.SlugField()
 
 
 class Ingredients(models.Model):
@@ -29,11 +22,11 @@ class Ingredients(models.Model):
         return self.name
 
 
-class Recepie(models.Model):
+class Recipe(models.Model):
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name="author_recepie",
+        related_name="author_recipe",
         verbose_name="Автор",
     )
     name = models.CharField("Название", max_length=50)
@@ -44,9 +37,9 @@ class Recepie(models.Model):
     ingredients = models.ManyToManyField(
         Ingredients, verbose_name="Ингридиенты", through="IngredientValue"
     )
-    сooking_time = models.PositiveSmallIntegerField("Время приготовления")
+    cooking_time = models.PositiveSmallIntegerField("Время приготовления")
     description = models.TextField("Описание")
-    image = models.ImageField("Фото", upload_to="recepies/")
+    image = models.ImageField("Фото", upload_to="recipes/")
     pub_date = models.DateTimeField(
         "Дата добавления", auto_now_add=True, db_index=True
     )
@@ -60,7 +53,7 @@ class Recepie(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("recepies_detail", kwargs={"slug": self.slug})
+        return reverse("recipe_detail", kwargs={"slug": self.slug})
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -79,8 +72,8 @@ class IngredientValue(models.Model):
         on_delete=models.CASCADE,
         verbose_name="Ингридиент",
     )
-    recepie = models.ForeignKey(
-        Recepie,
+    recipe = models.ForeignKey(
+        Recipe,
         related_name="recepie_value",
         on_delete=models.CASCADE,
         verbose_name="Рецепт",
