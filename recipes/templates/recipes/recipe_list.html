@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+{% load thumbnail %}
+
+{% block title %}Рецепты{% endblock title %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{% static '/pages/index.css' %}">
+{% endblock stylesheet %}
+
+{% block content %}
+        <div class="main__header">
+            <h1 class="main__title">Рецепты</h1>
+            <ul class="tags">
+                <li class="tags__item">
+                    <a id="breakfast" class="tags__checkbox tags__checkbox_style_orange tags__checkbox_active" href="#"></a>
+                    <span class="tags__label">Завтрак</span>
+                </li>
+                <li class="tags__item">
+                    <a id="lunch" class="tags__checkbox tags__checkbox_style_green tags__checkbox_active" href="#"></a>
+                    <span for="lunch" class="tags__label">Обед</span>
+                </li>
+                <li class="tags__item">
+                    <a id="dinner" class="tags__checkbox tags__checkbox_style_purple tags__checkbox_active" href="#"></a>
+                    <label for="dinner" class="tags__label">Ужин</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card-list">
+        {% for recipe in page_obj %}
+        
+        <div class="card" data-id="{{recie.pk}}">
+            
+            {% thumbnail recipe.image "364x240" crop="center" upscale=True as im %}
+                <a href="{{recipe.get_absolute_url}}" class="link" target="_blank"><img src="{{ im.url }}" alt="{{recipe.name}}" class="card__image"></a>
+            {% endthumbnail %}
+
+            <div class="card__body">
+                <a class="card__title link" href="{{recipe.get_absolute_url}}" target="_blank">{{recipe.name}}</a>
+                <ul class="card__items">
+                    {% if recipe.breakfast %}<li class="card__item"><span class="badge badge_style_green">Обед</span></li>{% endif %}
+                    {% if recipe.lunch %}<li class="card__item"><span class="badge badge_style_orange">Завтрак</span></li>{% endif %}
+                    {% if recipe.dinner %}<li class="card__item"><span class="badge badge_style_purple">Ужин</span></li>{% endif %}
+                </ul>
+                <div class="card__items card__items_column">
+                    <p class="card__text"><span class="icon-time"></span> {{recipe.cooking_time}} мин.</p>
+                    <p class="card__text"><span class="icon-user"></span> <a href="#" style="color: black">{{recipe.author.get_full_name}}</a></p>
+                </div>
+            </div>
+            <div class="card__footer">
+                <button class="button button_style_light-blue" name="purchases" data-out><span class="icon-plus button__icon"></span>Добавить в покупки</button>
+                
+                {% if user.is_authenticated %}
+                    <button class="button button_style_none" name="favorites" data-out><span class="icon-favorite"></span></button>
+                {% endif %}
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% if page_obj.has_other_pages %}
+        {% include "paginator.html" with items=page_obj paginator=paginator%}
+    {% endif %}
+        
+{% endblock content %}
+
+{% block scripts %}
+  <script src="{% static '/js/components/MainCards.js' %}"></script>
+
+  <script src="{% static '/js/components/Purchases.js' %}"></script>
+
+  <script src="{% static '/js/config/config.js' %}"></script>
+  <script src="{% static '/js/components/CardList.js' %}"></script>
+  <script src="{% static '/js/components/Header.js' %}"></script>
+
+  <script src="{% static '/js/api/Api.js' %}"></script>
+  
+  {% if user.is_authenticated %}
+    <script src="{% static 'indexAuth.js' %}"></script>
+    <script src="{% static '/js/components/Favorites.js' %}"></script>
+  {% else %}
+    <script src="{% static 'indexNotAuth.js' %}"></script>
+  {% endif %}
+
+{% endblock scripts %}
