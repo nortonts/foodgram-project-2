@@ -1,12 +1,12 @@
 from django.contrib import admin
 
-from .models import Ingredients, IngredientValue, Recepie
+from .models import Ingredients, IngredientValue, Recipe
 
 class IngredientValueInline(admin.StackedInline):
     model = IngredientValue
 
 
-@admin.register(Recepie)
+@admin.register(Recipe)
 class RecepieAdmin(admin.ModelAdmin):
     inlines = [IngredientValueInline,]
     prepopulated_fields = {"slug": ("name",)}
@@ -17,7 +17,7 @@ class RecepieAdmin(admin.ModelAdmin):
         (None, {'fields': ('author', 'name', 'slug')}),
         ("Теги", {'fields': (("breakfast", "lunch", "dinner",),)}),
         ("Информация и фото", {
-            'fields': ("сooking_time", "description", "image",),
+            'fields': ("cooking_time", "description", "image",),
         }),
     )
 
