@@ -83,3 +83,7 @@ class IngredientValue(models.Model):
     class Meta:
         verbose_name = "Количество ингридиентов"
         verbose_name_plural = "Количество ингридиентов"
+
+    def __str__(self):
+        return str(self.value)
+        
