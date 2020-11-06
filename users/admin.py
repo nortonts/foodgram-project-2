@@ -5,4 +5,13 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-admin.site.register(User, UserAdmin)
+@admin.register(User)
+class UserAdmin(UserAdmin):
+    list_filter = (
+        "username",
+        "email",
+        "is_staff",
+        "is_superuser",
+        "is_active",
+        "groups",
+    )
