@@ -16,6 +16,9 @@
 <div class="form-container">
     <form class="form" method="post" action="">
     {% csrf_token %}
+    <div class="form__group">
+        <span class="form__error">{{ form.non_field_errors.as_text|escape }}</span>
+    </div>   
     {% for field in form %}
         <div class="form__group">
             
@@ -26,7 +29,7 @@
                 {% if field.errors %}
                     <span class="form__error">{{ field.errors.as_text|escape }}</span>
                 {% endif %} 
-
+            
             </div>
         </div>
     {% endfor %}
