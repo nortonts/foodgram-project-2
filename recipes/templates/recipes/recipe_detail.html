@@ -2,7 +2,7 @@
 {% load static %}
 {% load thumbnail %}
 
-{% block title %}{% endblock title %}
+{% block title %}{{object.name}}{% endblock title %}
 
 {% block stylesheet %}
     <link rel="stylesheet" href="{% static '/pages/single.css' %}">
@@ -44,7 +44,7 @@
                     <li class="single-card__item"><p class="single-card__text"><span class="icon-user"></span> {{object.author.get_full_name}}</p></li>
 
                     {% if user == object.author %}
-                        <li class="single-card__item">  <a style="margin-left: 2.5em" href="#" class="single-card__text">Редактировать рецепт</a></li>
+                        <li class="single-card__item">  <a style="margin-left: 2.5em" href="{% url "recipe_edit" object.slug %}" class="single-card__text">Редактировать рецепт</a></li>
                     {% endif %}
 
                 </ul>
