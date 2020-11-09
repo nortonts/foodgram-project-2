@@ -29,8 +29,8 @@ class Recipe(models.Model):
         related_name="author_recipe",
         verbose_name="Автор",
     )
-    name = models.CharField("Название", max_length=50)
-    slug = models.SlugField()
+    name = models.CharField("Название", max_length=50, unique=True)
+    slug = models.SlugField(unique=True, db_index=True)
     breakfast = models.BooleanField("Завтрак")
     lunch = models.BooleanField("Обед")
     dinner = models.BooleanField("Ужин")
@@ -86,4 +86,3 @@ class IngredientValue(models.Model):
 
     def __str__(self):
         return str(self.value)
-        
