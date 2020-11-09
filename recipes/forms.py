@@ -18,4 +18,3 @@ class RecipeForm(forms.ModelForm):
             "description",
             "image",
         ]
-
