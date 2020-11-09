@@ -11,15 +11,15 @@ User = get_user_model()
 
 
 class Ingredients(models.Model):
-    name = models.CharField("Название", max_length=50)
-    units = models.CharField("Единицы измерения", max_length=50)
+    title = models.CharField("Название", max_length=50)
+    dimension = models.CharField("Единицы измерения", max_length=50)
 
     class Meta:
         verbose_name = "Ингридиент"
         verbose_name_plural = "Ингридиенты"
 
     def __str__(self):
-        return self.name
+        return self.title
 
 
 class Recipe(models.Model):

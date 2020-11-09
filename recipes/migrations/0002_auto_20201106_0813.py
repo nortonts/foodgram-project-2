@@ -11,7 +11,7 @@ def code(apps, schema_editor):
         
     for ingredient in data:
         Ingredients.objects.create(
-            name=ingredient['title'], units=ingredient['dimension']
+            title=ingredient['title'], dimension=ingredient['dimension']
         )
 
     

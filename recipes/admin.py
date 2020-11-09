@@ -34,6 +34,6 @@ class RecepieAdmin(admin.ModelAdmin):
 
 @admin.register(Ingredients)
 class IngredientsAdmin(admin.ModelAdmin):
-    list_display = ("name", "units")
-    search_fields = ("name", )
+    list_display = ("title", "dimension")
+    search_fields = ("title", )
     # TODO Добавить фильтр по названию.
