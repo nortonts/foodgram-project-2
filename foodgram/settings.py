@@ -43,8 +43,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-
-    'sorl.thumbnail',
+    "rest_framework",
+    "sorl.thumbnail",
 ]
 
 MIDDLEWARE = [
@@ -137,3 +137,9 @@ AUTH_USER_MODEL = "users.User"
 LOGIN_URL = "/auth/login/"
 LOGIN_REDIRECT_URL = "recipe_list"
 LOGOUT_REDIRECT_URL = "recipe_list"
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}
