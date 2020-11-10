@@ -143,10 +143,6 @@
 
 {% block scripts %}
 
-  <script src="{% static '/js/utils/debouncing.js' %}"></script>
-  <script src="{% static '/js/components/Header.js' %}"></script>
-  <script src="{% static '/js/config/config.js' %}"></script>
-  <script src="{% static '/js/api/Api.js' %}"></script>
-  <script src="{% static 'formRecipe.js' %}"></script>
+    {% include "scripts.html" with page="formRecipe" %}
 
 {% endblock scripts %}

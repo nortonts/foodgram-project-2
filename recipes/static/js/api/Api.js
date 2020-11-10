@@ -33,7 +33,7 @@ class Api {
       })
   }
   addPurchases (id) {
-    return fetch(`/purchases`, {
+    return fetch(`/api/purchases`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ class Api {
       })
   }
   addSubscriptions(id) {
-    return fetch(`/api/subscriptions`, {
+    return fetch(`/api/subscriptions/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ class Api {
       })
   }
   addFavorites (id)  {
-    return fetch(`/favorites`, {
+    return fetch(`/api/favorites`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
