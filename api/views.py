@@ -1,14 +1,17 @@
 from django.contrib.auth import get_user_model
-
+from rest_framework import status
 from rest_framework.generics import (
     CreateAPIView,
     DestroyAPIView,
     ListAPIView,
     get_object_or_404,
 )
+from rest_framework.response import Response
+from rest_framework.serializers import ValidationError
 
-from .serializers import IngredientsSerializer, SubscriptionSerializer
 from recipes.models import Ingredients, Subscription
+from .serializers import IngredientsSerializer, SubscriptionSerializer
+
 
 User = get_user_model()
 
@@ -31,34 +34,21 @@ class SubscriptionCreateAPIView(CreateAPIView):
 
     def perform_create(self, serializer):
         user = self.request.user
-        author_id = self.request.POST.get("id")
+        author_id = self.request.data.get("id")
         author = get_object_or_404(User, id=author_id)
+        if user == author:
+            raise ValidationError(
+                {"detail": "You can't subscribe to yourself"}
+            )
         serializer.save(user=user, author=author)
 
 
 class SubscriptionDeleteAPIView(DestroyAPIView):
     serializer_class = SubscriptionSerializer
-    queryset = Subscription.objects.all()
+    queryset = User.objects.all()
 
-    # def perform_destroy(self, author):
-    #     Subscription.objects.filter(
-    #         user=self.request.user, 
-    #         author=author
-    #     ).delete()
-    
-
-# @login_required
-# def profile_follow(request, username):
-#     follower = request.user
-#     following = get_object_or_404(User, username=username)
-#     if follower != following:
-#         Follow.objects.get_or_create(user=follower, author = following)
-#     return redirect(profile, username)
-
-
-# @login_required
-# def profile_unfollow(request, username):
-#     follower = request.user
-#     following = get_object_or_404(User, username=username)
-#     Follow.objects.filter(user=follower, author = following).delete()
-#     return redirect(profile, username)
+    def destroy(self, request, *args, **kwargs):
+        Subscription.objects.filter(
+            user=self.request.user, author=self.get_object()
+        ).delete()
+        return Response(data={"success": True})
