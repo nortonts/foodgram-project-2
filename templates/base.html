@@ -14,7 +14,7 @@
 
     <body class="body">
         {% include 'nav.html' %}
-
+        {% csrf_token %}
         <main class="main container">
                 {% block content %}
                 {% endblock content %}

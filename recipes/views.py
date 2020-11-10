@@ -2,9 +2,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, UpdateView
+from django.contrib.auth import get_user_model
 
 from .forms import RecipeForm
-from .models import Ingredients, IngredientValue, Recipe
+from .models import Ingredients, IngredientValue, Recipe, Subscription
+
+
+User = get_user_model()
 
 
 def get_ingredients(recipe):
@@ -64,7 +68,9 @@ class RecipeCreateView(LoginRequiredMixin, CreateView):
             recipe.save()
             create_ingridients(recipe, request.POST)
             form.save_m2m()
-            return redirect("recipe_detail", recipe.slug)
+            return redirect(
+                "recipe_detail", recipe.author.username, recipe.slug
+            )
         return render(request, "recipes/recipe_form.html", {"form": form})
 
 
@@ -91,7 +97,9 @@ class RecipeUpdateView(LoginRequiredMixin, UpdateView):
             self.object.recepie_value.all().delete()
             create_ingridients(self.object, request.POST)
             form.save()
-            return redirect("recipe_detail", self.object.slug)
+            return redirect(
+                "recipe_detail", self.object.author.username, self.object.slug
+            )
         return render(request, "recipes/recipe_form.html", {"form": form})
 
 
@@ -102,6 +110,9 @@ class AuthorRecipeListView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["current_page"] = "recipe"
+        context["author"] = get_object_or_404(
+            User, username=self.kwargs.get("username")
+        )
         return context
 
     def get_queryset(self):
@@ -110,3 +121,16 @@ class AuthorRecipeListView(ListView):
         if username:
             queryset = queryset.filter(author__username=username)
         return queryset
+
+
+class SubscriptionListView(LoginRequiredMixin, ListView):
+    model = Subscription
+    paginate_by = 6
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["current_page"] = "subscription"
+        return context
+
+    def get_queryset(self):
+        return Subscription.objects.filter(user=self.request.user)

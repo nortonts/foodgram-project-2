@@ -4,19 +4,29 @@ from . import views
 
 
 urlpatterns = [
-    path("", views.RecipeListView.as_view(), name="recipe_list"),
     path(
-        "author/<str:username>",
+        "create/", 
+        views.RecipeCreateView.as_view(), 
+        name="recipe_create"),
+    path(
+        "<str:username>/",
         views.AuthorRecipeListView.as_view(),
         name="author_recipe_list",
     ),
-    path("create/", views.RecipeCreateView.as_view(), name="recipe_create"),
     path(
-        "<str:slug>/edit/",
+        "<str:username>/subscription/",
+        views.SubscriptionListView.as_view(),
+        name="subscription_list",
+    ),
+    path(
+        "<str:username>/<str:slug>/edit/",
         views.RecipeUpdateView.as_view(),
         name="recipe_edit",
     ),
     path(
-        "<str:slug>/", views.RecipeDetailView.as_view(), name="recipe_detail"
+        "<str:username>/<str:slug>/", 
+        views.RecipeDetailView.as_view(), 
+        name="recipe_detail"
     ),
+    path("", views.RecipeListView.as_view(), name="recipe_list"),
 ]

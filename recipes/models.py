@@ -53,7 +53,10 @@ class Recipe(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("recipe_detail", kwargs={"slug": self.slug})
+        return reverse(
+            "recipe_detail",
+            kwargs={"username": self.author.username, "slug": self.slug},
+        )
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -86,3 +89,20 @@ class IngredientValue(models.Model):
 
     def __str__(self):
         return str(self.value)
+
+
+class Subscription(models.Model):
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="follower"
+    )
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="following"
+    )
+
+    class Meta:
+        verbose_name = "Подписка"
+        verbose_name_plural = "Подписки"
+
+    def __str__(self):
+        return f"{self.user} подписан на {self.author}"
+        

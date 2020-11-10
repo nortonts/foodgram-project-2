@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Ingredients, IngredientValue, Recipe
+from .models import Ingredients, IngredientValue, Recipe, Subscription
 
 class IngredientValueInline(admin.StackedInline):
     model = IngredientValue
@@ -37,3 +37,6 @@ class IngredientsAdmin(admin.ModelAdmin):
     list_display = ("title", "dimension")
     search_fields = ("title", )
     # TODO Добавить фильтр по названию.
+
+
+admin.site.register(Subscription)

@@ -10,7 +10,7 @@
 
 {% block content %}
 
-    <div class="single-card" data-id="371" data-author="12">
+    <div class="single-card" data-id="{{ object.id }}" data-author="{{ object.author.id }}">
 
         {% thumbnail object.image "480x480" crop="center" upscale=True as im %}
             <img src="{{ im.url }}" alt="{{object.name}}" class="single-card__image">
@@ -43,7 +43,7 @@
                 <ul class="single-card__items">
                     <li class="single-card__item"><p class="single-card__text"><span class="icon-user"></span> <a href="{%url "author_recipe_list" object.author.username %}" style="color: black">{{object.author.get_full_name}}</a></p></li>
                     {% if user == object.author %}
-                        <li class="single-card__item">  <a style="margin-left: 2.5em" href="{% url "recipe_edit" object.slug %}" class="single-card__text">Редактировать рецепт</a></li>
+                        <li class="single-card__item">  <a style="margin-left: 2.5em" href="{% url "recipe_edit" object.author.username object.slug %}" class="single-card__text">Редактировать рецепт</a></li>
                     {% endif %}
 
                 </ul>
