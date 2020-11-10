@@ -46,8 +46,12 @@ class RecipeDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        recipe = self.get_object()
         context["current_page"] = "recipe"
-        context["ingredients"] = get_ingredients(self.get_object())
+        context["ingredients"] = get_ingredients(recipe)
+        context["is_subscribed"] = Subscription.objects.filter(
+            author=recipe.author, user=self.request.user
+        ).exists()
         return context
 
 

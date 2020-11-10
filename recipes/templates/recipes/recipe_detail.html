@@ -22,7 +22,7 @@
                 <div class="single-card__header-info">
                     <h1 class="single-card__title">{{object.name}}</h1>
 
-                    {% if user.is_authenticated %}
+                    {% if user.is_authenticated and user != object.author %}
                         <div class="single-card__favorite">
                             <button class="button button_style_none" name="favorites" data-out><span class="icon-favorite icon-favorite_big"></span></button>
                             <div class="single-card__favorite-tooltip tooltip">Добавить в избранное</div>
@@ -51,8 +51,8 @@
 
             <ul class="single-card__items">
                 <li class="single-card__item"><button class="button button_style_blue" name="purchases" data-out><span class="icon-plus"></span> Добавить в покупки</button></li>
-                {% if user.is_authenticated %}
-                    <li class="single-card__item"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" data-out>Подписаться на автора</button></li>
+                {% if user.is_authenticated and user != object.author %}
+                    <li class="single-card__item"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" {% if is_subscribed %}>Отписаться от автора {% else %}data-out> Подписаться на автора{% endif %}</button></li>
                 {% endif %}
             </ul>
             <div class="single-card__section">
