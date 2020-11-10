@@ -18,6 +18,11 @@ urlpatterns = [
         views.SubscriptionListView.as_view(),
         name="subscription_list",
     ),
+        path(
+        "<str:username>/favorite/",
+        views.FavoriteRecipeListView.as_view(),
+        name="favorite_list",
+    ),
     path(
         "<str:username>/<str:slug>/edit/",
         views.RecipeUpdateView.as_view(),

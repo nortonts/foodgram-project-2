@@ -5,7 +5,13 @@ from django.views.generic.edit import CreateView, UpdateView
 from django.contrib.auth import get_user_model
 
 from .forms import RecipeForm
-from .models import Ingredients, IngredientValue, Recipe, Subscription
+from .models import (
+    Ingredients,
+    IngredientValue,
+    Recipe,
+    Subscription,
+    Favorite,
+)
 
 
 User = get_user_model()
@@ -113,10 +119,12 @@ class AuthorRecipeListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        author = get_object_or_404(User, username=self.kwargs.get("username"))
         context["current_page"] = "recipe"
-        context["author"] = get_object_or_404(
-            User, username=self.kwargs.get("username")
-        )
+        context["author"] = author
+        context["is_subscribed"] = Subscription.objects.filter(
+            author=author, user=self.request.user
+        ).exists()
         return context
 
     def get_queryset(self):
@@ -138,3 +146,20 @@ class SubscriptionListView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         return Subscription.objects.filter(user=self.request.user)
+
+
+class FavoriteRecipeListView(LoginRequiredMixin, ListView):
+    model = Recipe
+    paginate_by = 6
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["current_page"] = "favorite"
+        return context
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        recipe_id = Favorite.objects.filter(
+            user=self.request.user
+        ).values_list("recipe_id", flat=True)
+        return queryset.filter(id__in=recipe_id)

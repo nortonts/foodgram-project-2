@@ -2,7 +2,13 @@
 {% load static %}
 {% load thumbnail %}
 
-{% block title %}Рецепты {%if author %}автора: {{author.get_full_name}}{% endif %}{% endblock title %}
+{% block title %}
+{%if author %}Рецепты автора: {{author.get_full_name}}
+{% elif current_page == "favorite" %} Избранное
+{% else %}
+Рецепты
+{% endif %}
+{% endblock title %}
 
 {% block stylesheet %}
     <link rel="stylesheet" href="{% static '/pages/index.css' %}">
@@ -10,7 +16,13 @@
 
 {% block content %}
         <div class="main__header">
-            <h1 class="main__title">Рецепты {%if author %}автора: {{author.get_full_name}}{% endif %}</h1>
+            <h1 class="main__title">
+                {%if author %}Рецепты автора: {{author.get_full_name}}
+                {% elif current_page == "favorite" %} Избранное
+                {% else %}
+                Рецепты
+                {% endif %}
+            </h1>
             <ul class="tags">
                 <li class="tags__item">
                     <a id="breakfast" class="tags__checkbox tags__checkbox_style_orange tags__checkbox_active" href="#"></a>
@@ -26,7 +38,11 @@
                 </li>
             </ul>
         </div>
-
+        {% if author and author != user%}
+            <div class="author-subscribe" data-author="{{ author.id }}">
+                <p style="padding: 0 0 2em 0;"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" {% if is_subscribed %}>Отписаться от автора{% else %}data-out>Подписаться на автора{% endif %}</button></p>
+            </div>
+        {% endif %}
         <div class="card-list">
         {% for recipe in page_obj %}
         
@@ -67,8 +83,12 @@
 {% endblock content %}
 
 {% block scripts %}
-
-  {% if user.is_authenticated %}
+  
+  {% if current_page == "favorite" %}
+    {% include "scripts.html" with page="favorite" %}
+  {% elif author %}
+    {% include "scripts.html" with page="authorRecipe" %}
+  {% elif user.is_authenticated %}
     {% include "scripts.html" with page="indexAuth" %}
   {% else %}
     {% include "scripts.html" with page="indexNotAuth" %}

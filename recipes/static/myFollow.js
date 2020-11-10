@@ -11,7 +11,7 @@ const configButton = {
         },
         active: {
             class: 'button_style_blue',
-            text: `Отписаться`
+            text: `Отписаться от автора`
         }
     }
 }
