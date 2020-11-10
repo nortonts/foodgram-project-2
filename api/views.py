@@ -1,5 +1,4 @@
 from django.contrib.auth import get_user_model
-from rest_framework import status
 from rest_framework.generics import (
     CreateAPIView,
     DestroyAPIView,
@@ -9,8 +8,8 @@ from rest_framework.generics import (
 from rest_framework.response import Response
 from rest_framework.serializers import ValidationError
 
-from recipes.models import Ingredients, Subscription
-from .serializers import IngredientsSerializer, SubscriptionSerializer
+from recipes.models import Ingredients, Subscription, Favorite, Recipe
+from .serializers import IngredientsSerializer, SubscriptionSerializer, FavoriteSerializer
 
 
 User = get_user_model()
@@ -50,5 +49,26 @@ class SubscriptionDeleteAPIView(DestroyAPIView):
     def destroy(self, request, *args, **kwargs):
         Subscription.objects.filter(
             user=self.request.user, author=self.get_object()
+        ).delete()
+        return Response(data={"success": True})
+
+
+class FavoriteCreateAPIView(CreateAPIView):
+    serializer_class = FavoriteSerializer
+
+    def perform_create(self, serializer):
+        user = self.request.user
+        recipe_id = self.request.data.get("id")
+        recipe = get_object_or_404(Recipe, id=recipe_id)
+        serializer.save(user=user, recipe=recipe)
+
+
+class FavoriteDeleteAPIView(DestroyAPIView):
+    serializer_class = FavoriteSerializer
+    queryset = Recipe.objects.all()
+
+    def destroy(self, request, *args, **kwargs):
+        Favorite.objects.filter(
+            user=self.request.user, recipe=self.get_object()
         ).delete()
         return Response(data={"success": True})
