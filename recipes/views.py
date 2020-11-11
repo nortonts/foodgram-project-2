@@ -58,6 +58,9 @@ class RecipeDetailView(DetailView):
         context["is_subscribed"] = Subscription.objects.filter(
             author=recipe.author, user=self.request.user
         ).exists()
+        context["is_favorite"] = Favorite.objects.filter(
+            user=self.request.user, recipe=recipe
+        ).exists()
         return context
 
 
