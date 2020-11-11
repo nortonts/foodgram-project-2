@@ -26,12 +26,12 @@ urlpatterns = [
     ),
     path(
         "purchases/",
-        views.ShopingListCreateAPIView.as_view(),
+        views.ShoppingListCreateAPIView.as_view(),
         name="create_purchases",
     ),
     path(
         "purchases/<int:pk>/",
-        views.ShopingListDestroyAPIView.as_view(),
+        views.ShoppingListDestroyAPIView.as_view(),
         name="delete_purchases",
     ),
     path(

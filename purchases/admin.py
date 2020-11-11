@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import ShopingList
+from .models import ShoppingList
 
 
-admin.site.register(ShopingList)
+admin.site.register(ShoppingList)

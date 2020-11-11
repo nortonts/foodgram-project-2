@@ -6,7 +6,7 @@ from recipes.models import Recipe
 User = get_user_model()
 
 
-class ShopingList(models.Model):
+class ShoppingList(models.Model):
     user = models.ForeignKey(
         User, related_name="shoping_list", on_delete=models.CASCADE
     )

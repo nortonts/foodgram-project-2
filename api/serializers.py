@@ -2,7 +2,7 @@ from rest_framework import serializers
 from rest_framework.serializers import ValidationError
 
 from recipes.models import Ingredients, Subscription, Favorite
-from purchases.shopinglist import ShopingList
+from purchases.shoppinglist import ShoppingList
 
 
 class IngredientsSerializer(serializers.ModelSerializer):
@@ -48,12 +48,12 @@ class FavoriteSerializer(serializers.ModelSerializer):
         return super().save(**kwargs)
 
 
-class ShopingListSerializer(serializers.Serializer):
+class ShoppingListSerializer(serializers.Serializer):
     id = serializers.IntegerField()
 
     def create(self, validated_data):
         recipe_id = validated_data.get("id")
         request = validated_data.get("request")
-        shoping_list = ShopingList(request)
-        shoping_list.add(recipe_id)
-        return shoping_list
+        shopping_list = ShoppingList(request)
+        shopping_list.add(recipe_id)
+        return shopping_list

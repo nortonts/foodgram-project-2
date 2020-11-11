@@ -12,12 +12,12 @@ from rest_framework.permissions import AllowAny
 from rest_framework.decorators import api_view
 
 from recipes.models import Ingredients, Subscription, Favorite, Recipe
-from purchases.shopinglist import ShopingList
+from purchases.shoppinglist import ShoppingList
 from .serializers import (
     IngredientsSerializer,
     SubscriptionSerializer,
     FavoriteSerializer,
-    ShopingListSerializer,
+    ShoppingListSerializer,
 )
 
 
@@ -79,8 +79,8 @@ class FavoriteDeleteAPIView(DestroyAPIView):
         return Response(data={"success": True})
 
 
-class ShopingListCreateAPIView(CreateAPIView):
-    serializer_class = ShopingListSerializer
+class ShoppingListCreateAPIView(CreateAPIView):
+    serializer_class = ShoppingListSerializer
     queryset = Recipe.objects.all()
     permission_classes = [AllowAny]
 
@@ -91,13 +91,13 @@ class ShopingListCreateAPIView(CreateAPIView):
         return Response(data={"success": True})
 
 
-class ShopingListDestroyAPIView(DestroyAPIView):
-    serializer_class = ShopingListSerializer
+class ShoppingListDestroyAPIView(DestroyAPIView):
+    serializer_class = ShoppingListSerializer
     queryset = Recipe.objects.all()
     permission_classes = [AllowAny]
 
     def destroy(self, request, *args, **kwargs):
         recipe = self.get_object()
-        shoping_list = ShopingList(request)
-        shoping_list.remove(recipe.id)
+        shopping_list = ShoppingList(request)
+        shopping_list.remove(recipe.id)
         return Response(data={"success": True})
