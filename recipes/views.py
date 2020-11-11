@@ -55,12 +55,13 @@ class RecipeDetailView(DetailView):
         recipe = self.get_object()
         context["current_page"] = "recipe"
         context["ingredients"] = get_ingredients(recipe)
-        context["is_subscribed"] = Subscription.objects.filter(
-            author=recipe.author, user=self.request.user
-        ).exists()
-        context["is_favorite"] = Favorite.objects.filter(
+        if self.request.user.is_authenticated:
+            context["is_subscribed"] = Subscription.objects.filter(
+                author=recipe.author, user=self.request.user
+            ).exists()
+            context["is_favorite"] = Favorite.objects.filter(
             user=self.request.user, recipe=recipe
-        ).exists()
+            ).exists()
         return context
 
 
@@ -125,9 +126,10 @@ class AuthorRecipeListView(ListView):
         author = get_object_or_404(User, username=self.kwargs.get("username"))
         context["current_page"] = "recipe"
         context["author"] = author
-        context["is_subscribed"] = Subscription.objects.filter(
-            author=author, user=self.request.user
-        ).exists()
+        if self.request.user.is_authenticated:
+            context["is_subscribed"] = Subscription.objects.filter(
+                author=author, user=self.request.user
+            ).exists()
         return context
 
     def get_queryset(self):
