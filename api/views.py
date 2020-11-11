@@ -1,13 +1,18 @@
 from django.contrib.auth import get_user_model
+from rest_framework.views import APIView
 from rest_framework.generics import (
+    GenericAPIView,
     CreateAPIView,
     DestroyAPIView,
     ListAPIView,
     get_object_or_404,
 )
 from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
+from rest_framework.decorators import api_view
 
 from recipes.models import Ingredients, Subscription, Favorite, Recipe
+from purchases.shopinglist import ShopingList
 from .serializers import (
     IngredientsSerializer,
     SubscriptionSerializer,
@@ -77,9 +82,22 @@ class FavoriteDeleteAPIView(DestroyAPIView):
 class ShopingListCreateAPIView(CreateAPIView):
     serializer_class = ShopingListSerializer
     queryset = Recipe.objects.all()
+    permission_classes = [AllowAny]
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save(request=request)
+        return Response(data={"success": True})
+
+
+class ShopingListDestroyAPIView(DestroyAPIView):
+    serializer_class = ShopingListSerializer
+    queryset = Recipe.objects.all()
+    permission_classes = [AllowAny]
+
+    def destroy(self, request, *args, **kwargs):
+        recipe = self.get_object()
+        shoping_list = ShopingList(request)
+        shoping_list.remove(recipe.id)
         return Response(data={"success": True})

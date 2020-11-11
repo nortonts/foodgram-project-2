@@ -20,7 +20,7 @@ class Api {
         this.apiUrl =  apiUrl;
     }
   getPurchases () {
-    return fetch(`/purchases`, {
+    return fetch(`/api/purchases/`, {
       headers: {
         'Content-Type': 'application/json'
       }
@@ -33,10 +33,11 @@ class Api {
       })
   }
   addPurchases (id) {
-    return fetch(`/api/purchases`, {
+    return fetch(`/api/purchases/`, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-CSRFToken': csrftoken
       },
       body: JSON.stringify({
         id: id
@@ -50,10 +51,11 @@ class Api {
       })
   }
   removePurchases (id){
-    return fetch(`/purchases/${id}`, {
+    return fetch(`/api/purchases/${id}/`, {
       method: 'DELETE',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-CSRFToken': csrftoken
       }
     })
       .then( e => {

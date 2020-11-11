@@ -30,6 +30,11 @@ urlpatterns = [
         name="create_purchases",
     ),
     path(
+        "purchases/<int:pk>/",
+        views.ShopingListDestroyAPIView.as_view(),
+        name="delete_purchases",
+    ),
+    path(
         "ingredients/",
         views.IngredientsListAPIView.as_view(),
         name="ingredients_list",
