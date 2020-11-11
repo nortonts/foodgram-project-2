@@ -2,6 +2,7 @@ from rest_framework import serializers
 from rest_framework.serializers import ValidationError
 
 from recipes.models import Ingredients, Subscription, Favorite
+from purchases.shopinglist import ShopingList
 
 
 class IngredientsSerializer(serializers.ModelSerializer):
@@ -45,3 +46,14 @@ class FavoriteSerializer(serializers.ModelSerializer):
                 {"detail": "This recipe is already in your favorites"}
             )
         return super().save(**kwargs)
+
+
+class ShopingListSerializer(serializers.Serializer):
+    id = serializers.IntegerField()
+
+    def create(self, validated_data):
+        recipe_id = validated_data.get("id")
+        request = validated_data.get("request")
+        shoping_list = ShopingList(request)
+        shoping_list.add(recipe_id)
+        return shoping_list

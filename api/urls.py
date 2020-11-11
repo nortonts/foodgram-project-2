@@ -25,6 +25,11 @@ urlpatterns = [
         name="create_favorites",
     ),
     path(
+        "purchases/",
+        views.ShopingListCreateAPIView.as_view(),
+        name="create_purchases",
+    ),
+    path(
         "ingredients/",
         views.IngredientsListAPIView.as_view(),
         name="ingredients_list",

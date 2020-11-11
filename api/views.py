@@ -12,6 +12,7 @@ from .serializers import (
     IngredientsSerializer,
     SubscriptionSerializer,
     FavoriteSerializer,
+    ShopingListSerializer,
 )
 
 
@@ -70,4 +71,15 @@ class FavoriteDeleteAPIView(DestroyAPIView):
         Favorite.objects.filter(
             user=self.request.user, recipe=self.get_object()
         ).delete()
+        return Response(data={"success": True})
+
+
+class ShopingListCreateAPIView(CreateAPIView):
+    serializer_class = ShopingListSerializer
+    queryset = Recipe.objects.all()
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save(request=request)
         return Response(data={"success": True})
