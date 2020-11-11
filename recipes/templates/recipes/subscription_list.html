@@ -1,7 +1,7 @@
-
 {% extends "base.html" %}
 {% load static %}
 {% load thumbnail %}
+{% load recipe_filters %}
 
 {% block title %}Мои подписки{% endblock title %}
 
@@ -18,7 +18,7 @@
 {% for object in page_obj %}
     <div class="card-user" data-author="{{object.author.id}}">
         <div class="card-user__header">
-            <h2 class="card-user__title">{{object.author.get_full_name}}</h2>
+            <a href="{%url "author_recipe_list" object.author.username %}"><h2 class="card-user__title">{{object.author.get_full_name}}</h2></a>
         </div>
 
         <div class="card-user__body">
@@ -28,7 +28,7 @@
                     <li class="card-user__item">
                         <div class="recipe">
                             {% thumbnail recipe.image "72x72" crop="center" upscale=True as im %}
-                                <img src="{{ im.url }}" alt="{{recipe.name}}" class="recipe__image"></a>
+                                <a href="{{recipe.get_absolute_url}}"><img src="{{ im.url }}" alt="{{recipe.name}}" class="recipe__image"></a>
                             {% endthumbnail %}
                             <h3 class="recipe__title">{{recipe.name}}</h3>
                             <p class="recipe__text"><span class="icon-time"></span>{{recipe.cooking_time}} мин.</p>
@@ -37,7 +37,7 @@
             {% endfor %}
             {% if recipes|length > 3 %}
                 <li class="card-user__item">
-                    <a href="{% url 'author_recipe_list' object.author.username %}" class="card-user__link link">Еще {{recipes|length|add:"-3"}} рецептов...</a>
+                    <a href="{% url 'author_recipe_list' object.author.username %}" class="card-user__link link">Еще {{recipes|length|add:"-3"}} рецепт{{recipes|length|add:"-3"|plural_recipe}}...</a>
                 </li>
             {% endif %}
             </ul>
