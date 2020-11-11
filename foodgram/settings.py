@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "users",
     "recipes",
     "api",
+    "purchases",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
