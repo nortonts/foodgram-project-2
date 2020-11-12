@@ -3,3 +3,4 @@ pillow==7.0.0
 sorl-thumbnail==12.6.3
 Unidecode==1.1.1 
 djangorestframework==3.12.2
+WeasyPrint==52.1

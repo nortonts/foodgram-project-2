@@ -39,7 +39,7 @@
                 </li>
             </ul>
         </div>
-        {% if author and author != user%}
+        {% if author and author != user and user.is_authenticated%}
             <div class="author-subscribe" data-author="{{ author.id }}">
                 <p style="padding: 0 0 2em 0;"><button class="button button_style_light-blue button_size_subscribe" name="subscribe" {% if is_subscribed %}>Отписаться от автора{% else %}data-out>Подписаться на автора{% endif %}</button></p>
             </div>
@@ -67,7 +67,7 @@
             </div>
             <div class="card__footer">
             {% if recipe.slug in shoplist %}
-                <button class="button button_style_light-blue" name="purchases"><span class="icon-check button__icon"></span>Рецепт добавлен</button>
+                <button class="button button_style_light-blue-outline" name="purchases"><span class="icon-check button__icon"></span> Рецепт добавлен</button>
             {% else %}
                 <button class="button button_style_light-blue" name="purchases" data-out><span class="icon-plus button__icon"></span>Добавить в покупки</button>
             {% endif %}

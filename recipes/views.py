@@ -4,10 +4,9 @@ from django.views.generic import DetailView, ListView
 from django.views.generic.edit import CreateView, UpdateView
 from django.contrib.auth import get_user_model
 
+from .utils import get_ingredients, create_ingridients
 from .forms import RecipeForm
 from .models import (
-    Ingredients,
-    IngredientValue,
     Recipe,
     Subscription,
     Favorite,
@@ -15,26 +14,6 @@ from .models import (
 
 
 User = get_user_model()
-
-
-def get_ingredients(recipe):
-    ingredients = []
-    for ingredient in recipe.ingredients.all():
-        value = ingredient.ingredient_value.get(recipe=recipe)
-        ingredients.append((ingredient.title, value, ingredient.dimension))
-    return ingredients
-
-
-def create_ingridients(recipe, data):
-    for key, value in data.items():
-        arg = key.split("_")
-        if arg[0] == "nameIngredient":
-            title = value
-        if arg[0] == "valueIngredient":
-            ingredient = get_object_or_404(Ingredients, title=title)
-            IngredientValue.objects.update_or_create(
-                ingredient=ingredient, recipe=recipe, defaults={"value": value}
-            )
 
 
 class RecipeListView(ListView):

@@ -1,0 +1,35 @@
+<html>
+<body>
+    <h1>Продуктовый помошник</h1>
+    Мы составили для вас список продуктов по выбранным вами рецептам:
+    <ol>
+    {% for recipe in shopping_list %}
+        <li>{{recipe.name}}</li>
+    {% endfor %}
+    </ol>
+    <h3>Cписок продуктов:</h1>
+
+    <table>
+        <thead>
+            <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th>Количество</th>
+            <th>Рецепт</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for title, value, dimention, recipes in ingridients %}
+            <tr class="row{% cycle "1" "2" %}">
+                <td>{{ forloop.counter }}. </td>
+                <td>{{ title|capfirst }}</td>
+                <td>{{ value}} {{ dimention}}.</td>
+                <td>{{ recipes|join:', '}}</td>
+            </tr>
+                {% endfor %}
+                <tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
