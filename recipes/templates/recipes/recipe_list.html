@@ -24,20 +24,9 @@
                 Рецепты
                 {% endif %}
             </h1>
-            <ul class="tags">
-                <li class="tags__item">
-                    <a id="breakfast" class="tags__checkbox tags__checkbox_style_orange tags__checkbox_active" href="#"></a>
-                    <span class="tags__label">Завтрак</span>
-                </li>
-                <li class="tags__item">
-                    <a id="lunch" class="tags__checkbox tags__checkbox_style_green tags__checkbox_active" href="#"></a>
-                    <span for="lunch" class="tags__label">Обед</span>
-                </li>
-                <li class="tags__item">
-                    <a id="dinner" class="tags__checkbox tags__checkbox_style_purple tags__checkbox_active" href="#"></a>
-                    <label for="dinner" class="tags__label">Ужин</label>
-                </li>
-            </ul>
+            
+            {% include "filters.html" with filters=filters %}
+
         </div>
         {% if author and author != user and user.is_authenticated%}
             <div class="author-subscribe" data-author="{{ author.id }}">
@@ -56,8 +45,8 @@
             <div class="card__body">
                 <a class="card__title link" href="{{recipe.get_absolute_url}}" target="_blank">{{recipe.name}}</a>
                 <ul class="card__items">
-                    {% if recipe.breakfast %}<li class="card__item"><span class="badge badge_style_green">Обед</span></li>{% endif %}
-                    {% if recipe.lunch %}<li class="card__item"><span class="badge badge_style_orange">Завтрак</span></li>{% endif %}
+                    {% if recipe.breakfast %}<li class="card__item"><span class="badge badge_style_green">Завтрак</span></li>{% endif %}
+                    {% if recipe.lunch %}<li class="card__item"><span class="badge badge_style_orange">Обед</span></li>{% endif %}
                     {% if recipe.dinner %}<li class="card__item"><span class="badge badge_style_purple">Ужин</span></li>{% endif %}
                 </ul>
                 <div class="card__items card__items_column">
@@ -85,7 +74,7 @@
     </div>
 
     {% if page_obj.has_other_pages %}
-        {% include "paginator.html" with items=page_obj paginator=paginator%}
+        {% include "paginator.html" with items=page_obj paginator=paginator filters=filters%}
     {% endif %}
         
 {% endblock content %}
