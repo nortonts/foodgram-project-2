@@ -1,5 +1,5 @@
 from .shoppinglist import ShoppingList
 
 
-def shoplist_size(request):
-    return {'shoplist_size': len(ShoppingList(request))}
+def shoplist(request):
+    return {'shoplist': [recipe.slug for recipe in ShoppingList(request)]}
