@@ -5,6 +5,7 @@ from django.views.generic.edit import CreateView, UpdateView
 from django.contrib.auth import get_user_model
 
 from .utils import get_ingredients, create_ingridients
+from .mixins import RecipeMixin
 from .forms import RecipeForm
 from .models import (
     Recipe,
@@ -16,26 +17,8 @@ from .models import (
 User = get_user_model()
 
 
-class RecipeListView(ListView):
-    model = Recipe
-    paginate_by = 6
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["current_page"] = "recipe"
-        filters = self.request.GET.getlist(
-            "filters", ["breakfast", "lunch", "dinner"]
-        )
-        context["filters"] = "&" + "&".join([f"filters={f}" for f in filters])
-        return context
-
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        query_filters = self.request.GET.getlist("filters", ["breakfast", "lunch", "dinner"])
-        filters = dict.fromkeys(["breakfast", "lunch", "dinner"], False)
-        for f in query_filters:
-            del filters[f] 
-        return queryset.filter(**filters)
+class RecipeListView(RecipeMixin, ListView):
+    pass
 
 
 class RecipeDetailView(DetailView):
@@ -108,14 +91,11 @@ class RecipeUpdateView(LoginRequiredMixin, UpdateView):
         return render(request, "recipes/recipe_form.html", {"form": form})
 
 
-class AuthorRecipeListView(ListView):
-    model = Recipe
-    paginate_by = 6
+class AuthorRecipeListView(RecipeMixin, ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         author = get_object_or_404(User, username=self.kwargs.get("username"))
-        context["current_page"] = "recipe"
         context["author"] = author
         if self.request.user.is_authenticated:
             context["is_subscribed"] = Subscription.objects.filter(
@@ -144,10 +124,8 @@ class SubscriptionListView(LoginRequiredMixin, ListView):
         return Subscription.objects.filter(user=self.request.user)
 
 
-class FavoriteRecipeListView(LoginRequiredMixin, ListView):
-    model = Recipe
-    paginate_by = 6
-
+class FavoriteRecipeListView(LoginRequiredMixin, RecipeMixin, ListView):
+    
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["current_page"] = "favorite"
