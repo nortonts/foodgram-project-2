@@ -10,11 +10,11 @@ def code(apps, schema_editor):
         data = json.load(fh)    
         
     for ingredient in data:
-        Ingredients.objects.create(
-            title=ingredient['title'], dimension=ingredient['dimension']
+        Ingredients.objects.get_or_create(
+            title=ingredient['title'], 
+            defaults={"dimension":ingredient['dimension']}
         )
 
-    
 def reverse_code(apps, schema_editor):
     pass
 
