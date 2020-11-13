@@ -51,8 +51,12 @@ class ShoppingList:
                     ingridients_dict[title][0] += value.value
                     ingridients_dict[title][2].append(recipe.name)
                 else:
-                    ingridients_dict[title] = [value.value, dimention, [recipe.name]]
-        
+                    ingridients_dict[title] = [
+                        value.value,
+                        dimention,
+                        [recipe.name],
+                    ]
+
         ingridients_list = [
             [title, value[0], value[1], value[2]]
             for title, value in ingridients_dict.items()

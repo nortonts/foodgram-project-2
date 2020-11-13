@@ -1,9 +1,7 @@
-from django.contrib import messages
 from django.contrib.auth import authenticate, login
 from django.shortcuts import redirect, render
 
 from django.views.generic import CreateView
-from django.urls import reverse_lazy
 
 from .forms import CreationForm
 

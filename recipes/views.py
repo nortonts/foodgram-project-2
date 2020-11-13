@@ -1,8 +1,9 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import DetailView, ListView
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth import get_user_model
+from django.urls import reverse_lazy
 
 from .utils import get_ingredients, create_ingridients
 from .mixins import RecipeMixin
@@ -15,10 +16,6 @@ from .models import (
 
 
 User = get_user_model()
-
-
-class RecipeListView(RecipeMixin, ListView):
-    pass
 
 
 class RecipeDetailView(DetailView):
@@ -91,8 +88,28 @@ class RecipeUpdateView(LoginRequiredMixin, UpdateView):
         return render(request, "recipes/recipe_form.html", {"form": form})
 
 
-class AuthorRecipeListView(RecipeMixin, ListView):
+class RecipeDeleteView(LoginRequiredMixin, DeleteView):
+    model = Recipe
 
+    def get_success_url(self):
+        return reverse_lazy(
+            "author_recipe_list", args=[self.request.user.username]
+        )
+
+    def get(self, *args, **kwargs):
+        self.object = self.get_object()
+        if self.request.user != self.object.author:
+            return redirect(
+                "recipe_detail", kwargs.get("username"), kwargs.get("slug")
+            )
+        return self.post(*args, **kwargs)
+
+
+class RecipeListView(RecipeMixin, ListView):
+    pass
+
+
+class AuthorRecipeListView(RecipeMixin, ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         author = get_object_or_404(User, username=self.kwargs.get("username"))
@@ -111,6 +128,20 @@ class AuthorRecipeListView(RecipeMixin, ListView):
         return queryset
 
 
+class FavoriteRecipeListView(LoginRequiredMixin, RecipeMixin, ListView):
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["current_page"] = "favorite"
+        return context
+
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        recipe_id = Favorite.objects.filter(
+            user=self.request.user
+        ).values_list("recipe_id", flat=True)
+        return queryset.filter(id__in=recipe_id)
+
+
 class SubscriptionListView(LoginRequiredMixin, ListView):
     model = Subscription
     paginate_by = 6
@@ -124,16 +155,9 @@ class SubscriptionListView(LoginRequiredMixin, ListView):
         return Subscription.objects.filter(user=self.request.user)
 
 
-class FavoriteRecipeListView(LoginRequiredMixin, RecipeMixin, ListView):
-    
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context["current_page"] = "favorite"
-        return context
+def page_not_found(request, exception):
+    return render(request, "misc/404.html", {"path": request.path}, status=404)
 
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        recipe_id = Favorite.objects.filter(
-            user=self.request.user
-        ).values_list("recipe_id", flat=True)
-        return queryset.filter(id__in=recipe_id)
+
+def server_error(request):
+    return render(request, "misc/500.html", status=500)

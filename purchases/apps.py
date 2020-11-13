@@ -2,6 +2,5 @@ from django.apps import AppConfig
 
 
 class PurchasesConfig(AppConfig):
-    name = 'purchases'
+    name = "purchases"
     verbose_name = "Покупки"
-

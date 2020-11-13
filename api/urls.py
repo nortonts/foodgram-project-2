@@ -1,4 +1,4 @@
-from django.urls import include, path
+from django.urls import path
 
 from . import views
 
@@ -8,7 +8,7 @@ urlpatterns = [
         "subscriptions/<int:pk>/",
         views.SubscriptionDeleteAPIView.as_view(),
         name="delete_subscriptions",
-    ),    
+    ),
     path(
         "subscriptions/",
         views.SubscriptionCreateAPIView.as_view(),
@@ -18,7 +18,7 @@ urlpatterns = [
         "favorites/<int:pk>/",
         views.FavoriteDeleteAPIView.as_view(),
         name="delete_favorites",
-    ), 
+    ),
     path(
         "favorites/",
         views.FavoriteCreateAPIView.as_view(),

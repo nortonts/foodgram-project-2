@@ -67,6 +67,13 @@ class Recipe(models.Model):
         if not self.breakfast and not self.lunch and not self.dinner:
             raise ValidationError("Необходимо выбрать хотя бы один тег.")
 
+    def display_favorites(self):
+        return ", ".join(
+            [favorites.user.username for favorites in self.favorites.all()]
+        )
+
+    display_favorites.short_description = "В избранном"
+
 
 class IngredientValue(models.Model):
     ingredient = models.ForeignKey(
@@ -105,7 +112,7 @@ class Subscription(models.Model):
 
     def __str__(self):
         return f"{self.user} подписан на {self.author}"
-        
+
 
 class Favorite(models.Model):
     user = models.ForeignKey(
@@ -121,4 +128,3 @@ class Favorite(models.Model):
 
     def __str__(self):
         return f"{self.recipe} в избранном у {self.user}"
-        
