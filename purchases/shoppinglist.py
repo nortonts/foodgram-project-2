@@ -34,6 +34,9 @@ class ShoppingList:
         recipes = Recipe.objects.filter(id__in=recipes_id)
         for recipe in recipes:
             yield recipe
+            
+    def get_objects(self):
+        return Recipe.objects.filter(id__in=self.shoppinglist)
 
     def clear(self):
         del self.session[SHOPPINGLIST_SESSION_ID]

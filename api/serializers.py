@@ -33,10 +33,16 @@ class SubscriptionSerializer(serializers.ModelSerializer):
 
 
 class FavoriteSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField()
 
     class Meta:
         model = Favorite
         fields = ["id"]
+
+    def validate(self, attrs):
+        print(attrs)
+        print(self)
+        return attrs
 
     def save(self, **kwargs):
         user = kwargs.get("user")
