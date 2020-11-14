@@ -4,7 +4,7 @@
     Мы составили для вас список продуктов по выбранным вами рецептам:
     <ol>
     {% for recipe in shoppinglist %}
-        <li>{{recipe.name}}</li>
+        <li>{{ recipe.name }}</li>
     {% endfor %}
     </ol>
     <h3>Cписок продуктов:</h1>
@@ -23,8 +23,8 @@
             <tr class="row{% cycle "1" "2" %}">
                 <td>{{ forloop.counter }}. </td>
                 <td>{{ title|capfirst }}</td>
-                <td>{{ value}} {{ dimention}}.</td>
-                <td>{{ recipes|join:', '}}</td>
+                <td>{{ value }} {{ dimention }}.</td>
+                <td>{{ recipes|join:', ' }}</td>
             </tr>
                 {% endfor %}
                 <tr>

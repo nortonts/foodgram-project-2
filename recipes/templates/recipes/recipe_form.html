@@ -72,13 +72,13 @@
                     <div class="form__field-group-ingredientes-container">
                     {% for title, value, dimention in ingredients %}
                         {% with forloop.counter as ind %}
-                            <div class="form__field-item-ingredient" id="ing_{{ind}}">
-                                <span>{{title}} - {{value}} {{dimention}}.</span>
+                            <div class="form__field-item-ingredient" id="ing_{{ ind }}">
+                                <span>{{ title }} - {{ value }} {{ dimention }}.</span>
                         
                                 <span class="form__field-item-delete"></span>
-                                <input id="nameIngredient_{{ind}}" name="nameIngredient_{{ind}}" type="hidden" value="{{title}}">
-                                <input id="valueIngredient_{{ind}}" name="valueIngredient_{{ind}}" type="hidden" value="{{value}}">
-                                <input id="unitsIngredient_{{ind}}" name="unitsIngredient_{{ind}}" type="hidden" value="{{dimention}}.">
+                                <input id="nameIngredient_{{ ind }}" name="nameIngredient_{{ ind }}" type="hidden" value="{{ title }}">
+                                <input id="valueIngredient_{{ ind }}" name="valueIngredient_{{ ind }}" type="hidden" value="{{ value }}">
+                                <input id="unitsIngredient_{{ ind }}" name="unitsIngredient_{{ ind }}" type="hidden" value="{{ dimention }}.">
                             </div>
                         {% endwith %}
                     {% endfor %}
