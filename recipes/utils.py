@@ -17,7 +17,9 @@ def create_ingridients(recipe, data):
         if arg[0] == "nameIngredient":
             title = value
         if arg[0] == "valueIngredient":
-            ingredient = get_object_or_404(Ingredients, title=title)
+            ingredient, _ = Ingredients.objects.get_or_create(
+                title=title, defaults={"dimension": "шт"}
+            )
             IngredientValue.objects.update_or_create(
                 ingredient=ingredient, recipe=recipe, defaults={"value": value}
             )
