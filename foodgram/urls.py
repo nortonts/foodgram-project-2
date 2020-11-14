@@ -10,7 +10,7 @@ handler404 = "recipes.views.page_not_found"
 handler500 = "recipes.views.server_error"
 
 urlpatterns = [
-    path("api/", include("api.urls")),
+    path("api/v1/", include("api.urls")),
     path("admin/", admin.site.urls),
     path("auth/", include("users.urls")),
     path("auth/", include("django.contrib.auth.urls")),
