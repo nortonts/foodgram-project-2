@@ -54,6 +54,6 @@ class ShoppingListSerializer(serializers.Serializer):
     def create(self, validated_data):
         recipe_id = validated_data.get("id")
         request = validated_data.get("request")
-        shopping_list = ShoppingList(request)
-        shopping_list.add(recipe_id)
-        return shopping_list
+        shoppinglist = ShoppingList(request)
+        shoppinglist.add(recipe_id)
+        return shoppinglist

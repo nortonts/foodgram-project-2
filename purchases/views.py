@@ -8,21 +8,21 @@ from .shoppinglist import ShoppingList
 
 
 def shoppinglist_detail(request):
-    shopping_list = ShoppingList(request)
+    shoppinglist = ShoppingList(request)
     return render(
         request,
         "purchases/shopList.html",
-        {"shopping_list": shopping_list, "current_page": "shopping_list"},
+        {"shoppinglist": shoppinglist, "current_page": "shoppinglist"},
     )
 
 
 def download_shoppinglist(request):
-    shopping_list = ShoppingList(request)
-    ingridients = shopping_list.get_ingridients_for_pdf()
+    shoppinglist = ShoppingList(request)
+    ingridients = shoppinglist.get_ingridients_for_pdf()
 
     html = render_to_string(
         "purchases/pdf.html",
-        {"ingridients": ingridients, "shopping_list": shopping_list},
+        {"ingridients": ingridients, "shoppinglist": shoppinglist},
     )
     response = HttpResponse(content_type="application/pdf")
     response["Content-Disposition"] = 'filename="shoppinglist.pdf"'

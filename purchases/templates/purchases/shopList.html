@@ -10,12 +10,12 @@
 
 {% block content %}
     <div class="main__header">
-        <h1 class="main__title">Список покупок {% if not shopping_list %}пуст{% endif %}</h1>
+        <h1 class="main__title">Список покупок {% if not shoppinglist %}пуст{% endif %}</h1>
     </div>
     <div class="card-list card-list_column">
 
         <ul class="shopping-list">
-        {% for object in shopping_list %}
+        {% for object in shoppinglist %}
             <li class="shopping-list__item" data-id="{{object.id}}">
                 <div class="recipe recipe_reverse">
 
@@ -31,7 +31,7 @@
         {% endfor %}
 
         </ul>
-        {% if shopping_list %}
+        {% if shoppinglist %}
             <a href="{% url 'download_shoppinglist' %}" target="_blank"><button class="button button_style_blue">Скачать список</button></a>
         {% endif %}
     </div>

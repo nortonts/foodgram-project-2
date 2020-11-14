@@ -95,6 +95,6 @@ class ShoppingListDestroyAPIView(DestroyAPIView):
 
     def destroy(self, request, *args, **kwargs):
         recipe = self.get_object()
-        shopping_list = ShoppingList(request)
-        shopping_list.remove(recipe.id)
+        shoppinglist = ShoppingList(request)
+        shoppinglist.remove(recipe.id)
         return Response(data={"success": True})
