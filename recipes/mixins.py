@@ -1,5 +1,4 @@
-from .models import Recipe
-
+from .models import Recipe, Tag
 
 class RecipeMixin:
     model = Recipe
@@ -9,7 +8,7 @@ class RecipeMixin:
         context = super().get_context_data(**kwargs)
         context["current_page"] = "recipe"
         filters = self.request.GET.getlist(
-            "filters", ["breakfast", "lunch", "dinner"]
+            "filters", Tag.TAGS
         )
         context["filters"] = "&" + "&".join([f"filters={f}" for f in filters])
         return context
@@ -17,9 +16,9 @@ class RecipeMixin:
     def get_queryset(self):
         queryset = super().get_queryset()
         query_filters = self.request.GET.getlist(
-            "filters", ["breakfast", "lunch", "dinner"]
+            "filters", Tag.TAGS
         )
-        filters = dict.fromkeys(["breakfast", "lunch", "dinner"], False)
+        filters = dict.fromkeys(Tag.TAGS, False)
         for f in query_filters:
             del filters[f]
         return queryset.filter(**filters)

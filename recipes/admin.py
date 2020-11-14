@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from .models import (
-    Ingredients,
+    Ingredient,
     IngredientValue,
     Recipe,
     Subscription,
@@ -51,8 +51,8 @@ class RecepieAdmin(admin.ModelAdmin):
     list_filter = ("author", "name", "breakfast", "lunch", "dinner")
 
 
-@admin.register(Ingredients)
-class IngredientsAdmin(admin.ModelAdmin):
+@admin.register(Ingredient)
+class IngredientAdmin(admin.ModelAdmin):
     list_display = ("title", "dimension")
     search_fields = ("title",)
 

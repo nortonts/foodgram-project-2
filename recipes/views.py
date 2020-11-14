@@ -79,7 +79,7 @@ class RecipeUpdateView(LoginRequiredMixin, UpdateView):
         self.object = self.get_object()
         form = self.get_form()
         if form.is_valid():
-            self.object.recepie_value.all().delete()
+            self.object.ingredient_values.all().delete()
             create_ingridients(self.object, request.POST)
             form.save()
             return redirect(

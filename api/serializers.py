@@ -1,14 +1,14 @@
 from rest_framework import serializers
 from rest_framework.serializers import ValidationError
 
-from recipes.models import Ingredients, Subscription, Favorite
+from recipes.models import Ingredient, Subscription, Favorite
 from purchases.shoppinglist import ShoppingList
 
 
-class IngredientsSerializer(serializers.ModelSerializer):
+class IngredientSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Ingredients
+        model = Ingredient
         fields = ["title", "dimension"]
 
 
@@ -33,7 +33,7 @@ class SubscriptionSerializer(serializers.ModelSerializer):
 
 
 class FavoriteSerializer(serializers.ModelSerializer):
-    id = serializers.IntegerField()
+    # id = serializers.IntegerField()
 
     class Meta:
         model = Favorite

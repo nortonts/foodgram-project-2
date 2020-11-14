@@ -22,7 +22,7 @@
         </div>
 
         <div class="card-user__body">
-        {% with object.author.author_recipe.all as recipes %}
+        {% with object.author.recipes.all as recipes %}
             {% for recipe in recipes|slice:":3"  %}
                 <ul class="card-user__items">
                     <li class="card-user__item">
@@ -64,7 +64,4 @@
     
 {% endblock scripts %}
 
-
-
-</body>
 </html>

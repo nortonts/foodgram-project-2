@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Ingredients',
+            name='Ingredient',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=50, verbose_name='Название')),
@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('value', models.PositiveSmallIntegerField(verbose_name='Количество')),
-                ('ingredient', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='ingredient_value', to='recipes.Ingredients', verbose_name='Ингридиент')),
+                ('ingredient', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='ingredient_values', to='recipes.Ingredient', verbose_name='Ингридиент')),
             ],
             options={
                 'verbose_name': 'Количество ингридиентов',
@@ -51,8 +51,8 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(verbose_name='Описание')),
                 ('image', models.ImageField(upload_to='recipes/', verbose_name='Фото')),
                 ('pub_date', models.DateTimeField(auto_now_add=True, db_index=True, verbose_name='Дата добавления')),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='author_recipe', to=settings.AUTH_USER_MODEL, verbose_name='Автор')),
-                ('ingredients', models.ManyToManyField(through='recipes.IngredientValue', to='recipes.Ingredients', verbose_name='Ингридиенты')),
+                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='recipes', to=settings.AUTH_USER_MODEL, verbose_name='Автор')),
+                ('ingredients', models.ManyToManyField(through='recipes.IngredientValue', to='recipes.Ingredient', verbose_name='Ингридиенты')),
             ],
             options={
                 'verbose_name': 'Рецепт',
@@ -63,6 +63,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='ingredientvalue',
             name='recipe',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='recepie_value', to='recipes.Recipe', verbose_name='Рецепт'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='ingredient_values', to='recipes.Recipe', verbose_name='Рецепт'),
         ),
     ]

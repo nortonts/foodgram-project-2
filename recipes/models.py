@@ -10,7 +10,14 @@ from unidecode import unidecode
 User = get_user_model()
 
 
-class Ingredients(models.Model):
+class Tag:
+    BREAKFAST = "breakfast"
+    LUNCH = "lunch"
+    DINNER = "dinner"
+    TAGS = [BREAKFAST, LUNCH, DINNER]
+
+
+class Ingredient(models.Model):
     title = models.CharField("Название", max_length=50)
     dimension = models.CharField("Единицы измерения", max_length=50)
 
@@ -26,7 +33,7 @@ class Recipe(models.Model):
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name="author_recipe",
+        related_name="recipes",
         verbose_name="Автор",
     )
     name = models.CharField("Название", max_length=50, unique=True)
@@ -35,9 +42,11 @@ class Recipe(models.Model):
     lunch = models.BooleanField("Обед")
     dinner = models.BooleanField("Ужин")
     ingredients = models.ManyToManyField(
-        Ingredients, verbose_name="Ингридиенты", through="IngredientValue"
+        Ingredient, verbose_name="Ингридиенты", through="IngredientValue"
     )
-    cooking_time = models.PositiveSmallIntegerField("Время приготовления")
+    cooking_time = models.PositiveSmallIntegerField(
+        "Время приготовления", help_text="в минутах"
+    )
     description = models.TextField("Описание")
     image = models.ImageField("Фото", upload_to="recipes/")
     pub_date = models.DateTimeField(
@@ -69,7 +78,7 @@ class Recipe(models.Model):
 
     def display_favorites(self):
         return ", ".join(
-            [favorites.user.username for favorites in self.favorites.all()]
+            self.favorites.all().values_list("user__username", flat=True)
         )
 
     display_favorites.short_description = "В избранном"
@@ -77,14 +86,14 @@ class Recipe(models.Model):
 
 class IngredientValue(models.Model):
     ingredient = models.ForeignKey(
-        Ingredients,
-        related_name="ingredient_value",
+        Ingredient,
+        related_name="ingredient_values",
         on_delete=models.CASCADE,
         verbose_name="Ингридиент",
     )
     recipe = models.ForeignKey(
         Recipe,
-        related_name="recepie_value",
+        related_name="ingredient_values",
         on_delete=models.CASCADE,
         verbose_name="Рецепт",
     )

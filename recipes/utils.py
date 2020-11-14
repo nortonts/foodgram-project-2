@@ -1,12 +1,12 @@
 from django.shortcuts import get_object_or_404
 
-from .models import Ingredients, IngredientValue
+from .models import Ingredient, IngredientValue
 
 
 def get_ingredients(recipe):
     ingredients = []
     for ingredient in recipe.ingredients.all():
-        value = ingredient.ingredient_value.get(recipe=recipe)
+        value = ingredient.ingredient_values.get(recipe=recipe)
         ingredients.append((ingredient.title, value, ingredient.dimension))
     return ingredients
 
@@ -17,7 +17,7 @@ def create_ingridients(recipe, data):
         if arg[0] == "nameIngredient":
             title = value
         if arg[0] == "valueIngredient":
-            ingredient, _ = Ingredients.objects.get_or_create(
+            ingredient, _ = Ingredient.objects.get_or_create(
                 title=title, defaults={"dimension": "шт"}
             )
             IngredientValue.objects.update_or_create(

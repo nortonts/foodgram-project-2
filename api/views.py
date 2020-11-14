@@ -8,10 +8,10 @@ from rest_framework.generics import (
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny
 
-from recipes.models import Ingredients, Subscription, Favorite, Recipe
+from recipes.models import Ingredient, Subscription, Favorite, Recipe
 from purchases.shoppinglist import ShoppingList
 from .serializers import (
-    IngredientsSerializer,
+    IngredientSerializer,
     SubscriptionSerializer,
     FavoriteSerializer,
     ShoppingListSerializer,
@@ -21,11 +21,11 @@ from .serializers import (
 User = get_user_model()
 
 
-class IngredientsListAPIView(ListAPIView):
-    serializer_class = IngredientsSerializer
+class IngredientListAPIView(ListAPIView):
+    serializer_class = IngredientSerializer
 
     def get_queryset(self):
-        queryset = Ingredients.objects.all()
+        queryset = Ingredient.objects.all()
         query = self.request.query_params.get("query", None)
 
         if query is not None:

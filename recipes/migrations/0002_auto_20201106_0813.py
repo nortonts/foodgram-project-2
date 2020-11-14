@@ -4,13 +4,13 @@ from django.db import migrations
 import json
 
 def code(apps, schema_editor):
-    Ingredients = apps.get_model('recipes', 'Ingredients')
+    Ingredient = apps.get_model('recipes', 'Ingredient')
     
     with open('ingredients.json', 'r', encoding='utf-8') as fh:
         data = json.load(fh)    
         
     for ingredient in data:
-        Ingredients.objects.get_or_create(
+        Ingredient.objects.get_or_create(
             title=ingredient['title'], 
             defaults={"dimension":ingredient['dimension']}
         )
