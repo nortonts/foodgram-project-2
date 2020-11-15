@@ -45,18 +45,18 @@ class RecipeCreateView(LoginRequiredMixin, CreateView):
         context["current_page"] = "create_recipe"
         return context
 
-    def post(self, request, *args, **kwargs):
-        form = self.get_form()
-        if form.is_valid():
-            recipe = form.save(commit=False)
-            recipe.author = request.user
-            recipe.save()
-            create_ingridients(recipe, request.POST)
-            form.save_m2m()
-            return redirect(
-                "recipe_detail", recipe.author.username, recipe.slug
-            )
-        return render(request, "recipes/recipe_form.html", {"form": form})
+    def form_valid(self, form):
+        recipe = form.save(commit=False)
+        recipe.author = self.request.user
+        recipe.save()
+        create_ingridients(recipe, self.request.POST)
+        form.save_m2m()
+        return redirect(
+            "recipe_detail", recipe.author.username, recipe.slug
+        )
+    
+    def form_invalid(self, form):
+        return render(self.request, "recipes/recipe_form.html", {"form": form})
 
 
 class RecipeUpdateView(LoginRequiredMixin, UpdateView):
@@ -75,17 +75,16 @@ class RecipeUpdateView(LoginRequiredMixin, UpdateView):
             return redirect("recipe_detail", self.object.slug)
         return super().get(request, *args, **kwargs)
 
-    def post(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        form = self.get_form()
-        if form.is_valid():
-            self.object.ingredient_values.all().delete()
-            create_ingridients(self.object, request.POST)
-            form.save()
-            return redirect(
-                "recipe_detail", self.object.author.username, self.object.slug
-            )
-        return render(request, "recipes/recipe_form.html", {"form": form})
+    def form_valid(self, form):
+        self.object.ingredient_values.all().delete()
+        create_ingridients(self.object, self.request.POST)
+        form.save()
+        return redirect(
+            "recipe_detail", self.object.author.username, self.object.slug
+        )
+    
+    def form_invalid(self, form):
+        return render(self.request, "recipes/recipe_form.html", {"form": form})
 
 
 class RecipeDeleteView(LoginRequiredMixin, DeleteView):
