@@ -6,7 +6,7 @@ from django.contrib.auth import get_user_model
 from django.urls import reverse_lazy
 
 from .utils import get_ingredients, create_ingridients
-from .mixins import RecipeMixin
+from .mixins import RecipeMixin, IsAuthorMixin
 from .forms import RecipeForm
 from .models import (
     Recipe,
@@ -59,7 +59,7 @@ class RecipeCreateView(LoginRequiredMixin, CreateView):
         return render(self.request, "recipes/recipe_form.html", {"form": form})
 
 
-class RecipeUpdateView(LoginRequiredMixin, UpdateView):
+class RecipeUpdateView(LoginRequiredMixin, IsAuthorMixin, UpdateView):
     model = Recipe
     form_class = RecipeForm
 
@@ -68,12 +68,6 @@ class RecipeUpdateView(LoginRequiredMixin, UpdateView):
         context["current_page"] = "recipe"
         context["ingredients"] = get_ingredients(self.get_object())
         return context
-
-    def get(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        if request.user != self.object.author:
-            return redirect("recipe_detail", self.object.slug)
-        return super().get(request, *args, **kwargs)
 
     def form_valid(self, form):
         self.object.ingredient_values.all().delete()
@@ -87,7 +81,7 @@ class RecipeUpdateView(LoginRequiredMixin, UpdateView):
         return render(self.request, "recipes/recipe_form.html", {"form": form})
 
 
-class RecipeDeleteView(LoginRequiredMixin, DeleteView):
+class RecipeDeleteView(LoginRequiredMixin, IsAuthorMixin, DeleteView):
     model = Recipe
 
     def get_success_url(self):
@@ -97,10 +91,6 @@ class RecipeDeleteView(LoginRequiredMixin, DeleteView):
 
     def get(self, *args, **kwargs):
         self.object = self.get_object()
-        if self.request.user != self.object.author:
-            return redirect(
-                "recipe_detail", kwargs.get("username"), kwargs.get("slug")
-            )
         return self.post(*args, **kwargs)
 
 
@@ -122,7 +112,7 @@ class AuthorRecipeListView(RecipeMixin, ListView):
     def get_queryset(self):
         queryset = super().get_queryset()
         username = self.kwargs.get("username")
-        if username:
+        if username is not None:
             queryset = queryset.filter(author__username=username)
         return queryset
 
@@ -152,11 +142,3 @@ class SubscriptionListView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         return Subscription.objects.filter(user=self.request.user)
-
-
-def page_not_found(request, exception):
-    return render(request, "misc/404.html", {"path": request.path}, status=404)
-
-
-def server_error(request):
-    return render(request, "misc/500.html", status=500)
