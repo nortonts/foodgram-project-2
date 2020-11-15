@@ -53,14 +53,14 @@
 </div>
     
     {% if page_obj.has_other_pages %}
-        {% include "paginator.html" with items=page_obj paginator=paginator%}
+        {% include "includes/paginator.html" with items=page_obj paginator=paginator%}
     {% endif %}
         
 {% endblock content %}
 
 {% block scripts %}
 
-    {% include "scripts.html" with page="myFollow" %}
+    {% include "includes/scripts.html" with page="myFollow" %}
     
 {% endblock scripts %}
 

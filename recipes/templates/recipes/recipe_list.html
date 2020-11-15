@@ -25,7 +25,7 @@
                 {% endif %}
             </h1>
             
-            {% include "filters.html" with filters=filters %}
+            {% include "includes/filters.html" with filters=filters %}
 
         </div>
         {% if author and author != user and user.is_authenticated%}
@@ -74,7 +74,7 @@
     </div>
 
     {% if page_obj.has_other_pages %}
-        {% include "paginator.html" with items=page_obj paginator=paginator filters=filters%}
+        {% include "includes/paginator.html" with items=page_obj paginator=paginator filters=filters%}
     {% endif %}
         
 {% endblock content %}
@@ -82,13 +82,13 @@
 {% block scripts %}
   
   {% if current_page == "favorite" %}
-    {% include "scripts.html" with page="favorite" %}
+    {% include "includes/scripts.html" with page="favorite" %}
   {% elif author %}
-    {% include "scripts.html" with page="authorRecipe" %}
+    {% include "includes/scripts.html" with page="authorRecipe" %}
   {% elif user.is_authenticated %}
-    {% include "scripts.html" with page="indexAuth" %}
+    {% include "includes/scripts.html" with page="indexAuth" %}
   {% else %}
-    {% include "scripts.html" with page="indexNotAuth" %}
+    {% include "includes/scripts.html" with page="indexNotAuth" %}
   {% endif %}
   
 {% endblock scripts %}

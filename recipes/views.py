@@ -125,10 +125,10 @@ class FavoriteRecipeListView(LoginRequiredMixin, RecipeMixin, ListView):
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        recipe_id = Favorite.objects.filter(
+        recipe_ids = Favorite.objects.filter(
             user=self.request.user
         ).values_list("recipe_id", flat=True)
-        return queryset.filter(id__in=recipe_id)
+        return queryset.filter(id__in=recipe_ids)
 
 
 class SubscriptionListView(LoginRequiredMixin, ListView):

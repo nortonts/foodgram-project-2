@@ -87,9 +87,9 @@
 {% block scripts %}
 
   {% if user.is_authenticated %}
-    {% include "scripts.html" with page="singlePage" %}
+    {% include "includes/scripts.html" with page="singlePage" %}
   {% else %}
-    {% include "scripts.html" with page="singlePageNotAuth" %}
+    {% include "includes/scripts.html" with page="singlePageNotAuth" %}
   {% endif %}
 
 {% endblock scripts %}

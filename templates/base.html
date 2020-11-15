@@ -13,14 +13,15 @@
     </head>
 
     <body class="body">
-        {% include 'nav.html' %}
+        {% include 'includes/nav.html' %}
+        {# csrf_token to send POST and DELETE requests to the API via JS #}
         {% csrf_token %}
         <main class="main container">
                 {% block content %}
                 {% endblock content %}
         </main>
         
-        {% include 'footer.html' %}
+        {% include 'includes/footer.html' %}
 
         {% block scripts %}
         {% endblock scripts %}
