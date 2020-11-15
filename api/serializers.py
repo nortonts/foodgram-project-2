@@ -1,26 +1,33 @@
+from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from rest_framework.serializers import ValidationError
+from rest_framework.generics import get_object_or_404
 
-from recipes.models import Ingredient, Subscription, Favorite
+from recipes.models import Ingredient, Subscription, Favorite, Recipe
 from purchases.shoppinglist import ShoppingList
 
 
-class IngredientSerializer(serializers.ModelSerializer):
+User = get_user_model()
 
+
+class IngredientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ingredient
         fields = ["title", "dimension"]
 
 
 class SubscriptionSerializer(serializers.ModelSerializer):
+    id = serializers.IntegerField()
 
     class Meta:
         model = Subscription
         fields = ["id"]
 
-    def save(self, **kwargs):
-        user = kwargs.get("user")
-        author = kwargs.get("author")
+    def validate(self, attrs):
+        author_id = attrs.get("id")
+        author = get_object_or_404(User, id=author_id)
+        user = self.context.get("request").user
+
         if user == author:
             raise ValidationError(
                 {"detail": "You can't subscribe to yourself"}
@@ -29,29 +36,32 @@ class SubscriptionSerializer(serializers.ModelSerializer):
             raise ValidationError(
                 {"detail": "You have already subscribed to this author"}
             )
-        return super().save(**kwargs)
+
+        attrs["user"] = user
+        attrs["author"] = author
+        return attrs
 
 
 class FavoriteSerializer(serializers.ModelSerializer):
-    # id = serializers.IntegerField()
+    id = serializers.IntegerField()
 
     class Meta:
         model = Favorite
         fields = ["id"]
 
     def validate(self, attrs):
-        print(attrs)
-        print(self)
-        return attrs
+        recipe_id = attrs.get("id")
+        recipe = get_object_or_404(Recipe, id=recipe_id)
+        user = self.context.get("request").user
 
-    def save(self, **kwargs):
-        user = kwargs.get("user")
-        recipe = kwargs.get("recipe")
         if Favorite.objects.filter(user=user, recipe=recipe).exists():
             raise ValidationError(
                 {"detail": "This recipe is already in your favorites"}
             )
-        return super().save(**kwargs)
+
+        attrs["user"] = user
+        attrs["recipe"] = recipe
+        return attrs
 
 
 class ShoppingListSerializer(serializers.Serializer):

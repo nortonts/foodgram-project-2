@@ -37,12 +37,6 @@ class IngredientListAPIView(ListAPIView):
 class SubscriptionCreateAPIView(CreateAPIView):
     serializer_class = SubscriptionSerializer
 
-    def perform_create(self, serializer):
-        user = self.request.user
-        author_id = self.request.data.get("id")
-        author = get_object_or_404(User, id=author_id)
-        serializer.save(user=user, author=author)
-
 
 class SubscriptionDeleteAPIView(DestroyAPIView):
     serializer_class = SubscriptionSerializer
@@ -57,12 +51,6 @@ class SubscriptionDeleteAPIView(DestroyAPIView):
 
 class FavoriteCreateAPIView(CreateAPIView):
     serializer_class = FavoriteSerializer
-
-    def perform_create(self, serializer):
-        user = self.request.user
-        recipe_id = self.request.data.get("id")
-        recipe = get_object_or_404(Recipe, id=recipe_id)
-        serializer.save(user=user, recipe=recipe)
 
 
 class FavoriteDeleteAPIView(DestroyAPIView):
