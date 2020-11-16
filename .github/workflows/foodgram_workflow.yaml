@@ -20,8 +20,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Lint with flake8
-      run: flake8 --ignore=E501,F401,F403,F405,W503 \
-      --exclude recipes/migrations/ .
+      run: flake8 --ignore=E501,F401,F403,F405,W503 --exclude recipes/migrations/ .
   
   push_to_docker_hub:
     name: Push Docker image to Docker Hub
