@@ -54,7 +54,7 @@ class RecipeCreateView(LoginRequiredMixin, CreateView):
         return redirect(
             "recipe_detail", recipe.author.username, recipe.slug
         )
-    
+
     def form_invalid(self, form):
         return render(self.request, "recipes/recipe_form.html", {"form": form})
 
@@ -76,7 +76,7 @@ class RecipeUpdateView(LoginRequiredMixin, IsAuthorMixin, UpdateView):
         return redirect(
             "recipe_detail", self.object.author.username, self.object.slug
         )
-    
+
     def form_invalid(self, form):
         return render(self.request, "recipes/recipe_form.html", {"form": form})
 
