@@ -44,7 +44,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: sergepogorelov/foodrgram:latest
+          tags: sergepogorelov/foodgram:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -72,7 +72,7 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }} 
         script: |
           sudo docker-compose down
-          sudo docker pull sergepogorelov/foodrgram:latest
+          sudo docker pull sergepogorelov/foodgram:latest
           sudo docker-compose up -d
           sudo docker image prune -f
 
