@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.shortcuts import redirect
 
 from .models import Recipe, Tag
@@ -18,13 +19,18 @@ class RecipeMixin:
 
     def get_queryset(self):
         queryset = super().get_queryset()
-        query_filters = self.request.GET.getlist(
-            "filters", Tag.TAGS
-        )
-        filters = dict.fromkeys(Tag.TAGS, False)
-        for f in query_filters:
-            del filters[f]
-        return queryset.filter(**filters)
+        query_filters = self.request.GET.getlist("filters", Tag.TAGS)
+        
+        if len(query_filters) == 1:
+            f = dict.fromkeys(query_filters, True)
+            return queryset.filter(**f)
+
+        if len(query_filters) == 2:
+            f1 = dict.fromkeys([query_filters[0]], True)
+            f2 = dict.fromkeys([query_filters[1]], True)
+            return queryset.filter(Q(**f1) | Q(**f2))
+
+        return queryset
 
 
 class IsAuthorMixin:
