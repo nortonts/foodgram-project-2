@@ -10,7 +10,7 @@ handler404 = "foodgram.views.page_not_found"
 handler500 = "foodgram.views.server_error"
 
 urlpatterns = [
-    path("api/v1/", include("api.urls")),
+    path("api/", include("api.urls")),
     path("admin/", admin.site.urls),
     path("auth/", include("users.urls")),
     path("auth/", include("django.contrib.auth.urls")),
