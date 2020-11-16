@@ -20,7 +20,7 @@ class RecipeMixin:
     def get_queryset(self):
         queryset = super().get_queryset()
         query_filters = self.request.GET.getlist("filters", Tag.TAGS)
-        
+
         if len(query_filters) == 1:
             f = dict.fromkeys(query_filters, True)
             return queryset.filter(**f)
