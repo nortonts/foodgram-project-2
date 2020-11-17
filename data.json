@@ -1,0 +1,1901 @@
+[
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 19,
+        "fields": {
+            "ingredient": 1083,
+            "recipe": 4,
+            "value": 375
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 20,
+        "fields": {
+            "ingredient": 1155,
+            "recipe": 4,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 21,
+        "fields": {
+            "ingredient": 1164,
+            "recipe": 4,
+            "value": 10
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 22,
+        "fields": {
+            "ingredient": 1346,
+            "recipe": 4,
+            "value": 30
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 23,
+        "fields": {
+            "ingredient": 1355,
+            "recipe": 4,
+            "value": 50
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 24,
+        "fields": {
+            "ingredient": 1686,
+            "recipe": 4,
+            "value": 2
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 25,
+        "fields": {
+            "ingredient": 1860,
+            "recipe": 4,
+            "value": 150
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 26,
+        "fields": {
+            "ingredient": 2079,
+            "recipe": 4,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 28,
+        "fields": {
+            "ingredient": 3,
+            "recipe": 5,
+            "value": 112
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 29,
+        "fields": {
+            "ingredient": 24,
+            "recipe": 5,
+            "value": 123
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 30,
+        "fields": {
+            "ingredient": 288,
+            "recipe": 6,
+            "value": 1000
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 31,
+        "fields": {
+            "ingredient": 1921,
+            "recipe": 6,
+            "value": 500
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 32,
+        "fields": {
+            "ingredient": 2057,
+            "recipe": 6,
+            "value": 20
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 33,
+        "fields": {
+            "ingredient": 1164,
+            "recipe": 6,
+            "value": 30
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 34,
+        "fields": {
+            "ingredient": 1248,
+            "recipe": 6,
+            "value": 20
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 35,
+        "fields": {
+            "ingredient": 882,
+            "recipe": 6,
+            "value": 150
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 46,
+        "fields": {
+            "ingredient": 1239,
+            "recipe": 7,
+            "value": 20
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 47,
+        "fields": {
+            "ingredient": 2057,
+            "recipe": 7,
+            "value": 10
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 48,
+        "fields": {
+            "ingredient": 161,
+            "recipe": 7,
+            "value": 2
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 49,
+        "fields": {
+            "ingredient": 2039,
+            "recipe": 7,
+            "value": 200
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 50,
+        "fields": {
+            "ingredient": 1760,
+            "recipe": 7,
+            "value": 20
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 51,
+        "fields": {
+            "ingredient": 741,
+            "recipe": 7,
+            "value": 20
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 52,
+        "fields": {
+            "ingredient": 279,
+            "recipe": 7,
+            "value": 500
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 53,
+        "fields": {
+            "ingredient": 557,
+            "recipe": 7,
+            "value": 500
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 54,
+        "fields": {
+            "ingredient": 288,
+            "recipe": 8,
+            "value": 500
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 55,
+        "fields": {
+            "ingredient": 7,
+            "recipe": 8,
+            "value": 300
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 56,
+        "fields": {
+            "ingredient": 880,
+            "recipe": 8,
+            "value": 20
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 57,
+        "fields": {
+            "ingredient": 1240,
+            "recipe": 8,
+            "value": 10
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 58,
+        "fields": {
+            "ingredient": 753,
+            "recipe": 8,
+            "value": 30
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 59,
+        "fields": {
+            "ingredient": 1962,
+            "recipe": 9,
+            "value": 500
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 60,
+        "fields": {
+            "ingredient": 881,
+            "recipe": 9,
+            "value": 20
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 61,
+        "fields": {
+            "ingredient": 1244,
+            "recipe": 9,
+            "value": 200
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 62,
+        "fields": {
+            "ingredient": 1260,
+            "recipe": 9,
+            "value": 10
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 63,
+        "fields": {
+            "ingredient": 1479,
+            "recipe": 9,
+            "value": 10
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 70,
+        "fields": {
+            "ingredient": 1174,
+            "recipe": 11,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 71,
+        "fields": {
+            "ingredient": 1611,
+            "recipe": 11,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 72,
+        "fields": {
+            "ingredient": 488,
+            "recipe": 11,
+            "value": 200
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 73,
+        "fields": {
+            "ingredient": 856,
+            "recipe": 11,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 74,
+        "fields": {
+            "ingredient": 97,
+            "recipe": 11,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 75,
+        "fields": {
+            "ingredient": 619,
+            "recipe": 12,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 76,
+        "fields": {
+            "ingredient": 2047,
+            "recipe": 12,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 77,
+        "fields": {
+            "ingredient": 938,
+            "recipe": 12,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 78,
+        "fields": {
+            "ingredient": 44,
+            "recipe": 12,
+            "value": 100
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 79,
+        "fields": {
+            "ingredient": 94,
+            "recipe": 12,
+            "value": 1
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 80,
+        "fields": {
+            "ingredient": 484,
+            "recipe": 12,
+            "value": 300
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 81,
+        "fields": {
+            "ingredient": 2079,
+            "recipe": 10,
+            "value": 4
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 82,
+        "fields": {
+            "ingredient": 2182,
+            "recipe": 10,
+            "value": 5
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 83,
+        "fields": {
+            "ingredient": 1918,
+            "recipe": 10,
+            "value": 150
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 84,
+        "fields": {
+            "ingredient": 1686,
+            "recipe": 10,
+            "value": 2
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 85,
+        "fields": {
+            "ingredient": 1287,
+            "recipe": 10,
+            "value": 5
+        }
+    },
+    {
+        "model": "recipes.ingredientvalue",
+        "pk": 86,
+        "fields": {
+            "ingredient": 664,
+            "recipe": 10,
+            "value": 300
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "users",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "recipes",
+            "model": "ingredient"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "recipes",
+            "model": "ingredientvalue"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "recipes",
+            "model": "recipe"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "recipes",
+            "model": "subscription"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "recipes",
+            "model": "favorite"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "sites",
+            "model": "site"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "flatpages",
+            "model": "flatpage"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 14,
+        "fields": {
+            "app_label": "thumbnail",
+            "model": "kvstore"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "8y3l9ksg5xnn0yry24g1dwk6neizr41z",
+        "fields": {
+            "session_data": "Y2JhZjExODk3Zjc1ZmFkNTY0NTQ5NDhjMTczZmJlNTk0OTY1MDBmMDp7InNob3BwaW5nbGlzdCI6WzVdLCJfYXV0aF91c2VyX2lkIjoiNCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNjBkNzRlNGQ0MmViYmM0YzRjZWQzMzQ0MTk0YzU4NGY2MWYxZjAxOCJ9",
+            "expire_date": "2020-11-30T22:23:17.565Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "9xp311kxtg86d327yo3czq89p8ofnzeh",
+        "fields": {
+            "session_data": "ZmZhZGNjZmZhOGFjODQxNmVhOTIxMmVkOWU3MzY5OGQ3ZDFlNDQ2Mjp7InNob3BwaW5nbGlzdCI6W119",
+            "expire_date": "2020-11-30T22:53:00.714Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "c3qcy806xdfa1iy6jj1v5mkk70c31n0e",
+        "fields": {
+            "session_data": "ZmZhZGNjZmZhOGFjODQxNmVhOTIxMmVkOWU3MzY5OGQ3ZDFlNDQ2Mjp7InNob3BwaW5nbGlzdCI6W119",
+            "expire_date": "2020-11-30T21:37:06.754Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "gz5g0r4h98lxdlaotp3znqtyid617t0w",
+        "fields": {
+            "session_data": "ZmZhZGNjZmZhOGFjODQxNmVhOTIxMmVkOWU3MzY5OGQ3ZDFlNDQ2Mjp7InNob3BwaW5nbGlzdCI6W119",
+            "expire_date": "2020-11-30T22:54:18.316Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "ho88kodeuod6de88ihs29ze60wc3u0uf",
+        "fields": {
+            "session_data": "YWQ1YTU5NWIzYTMyMGI4NjNiNDdkNzA0YTljZTRlOGJjZmVlMzIwNTp7InNob3BwaW5nbGlzdCI6WzgsMTIsOV0sIl9hdXRoX3VzZXJfaWQiOiI1IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJmNWU1ZWJkNDc4ZDM5NjkwMDI1NjAzYWVjNGUxODgxNzA4ZDMxZGM1In0=",
+            "expire_date": "2020-11-30T22:52:53.354Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "jbcnvb37sfunxk54vid42us8awvs618f",
+        "fields": {
+            "session_data": "ZmZhZGNjZmZhOGFjODQxNmVhOTIxMmVkOWU3MzY5OGQ3ZDFlNDQ2Mjp7InNob3BwaW5nbGlzdCI6W119",
+            "expire_date": "2020-11-30T21:52:56.232Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "qpyestd68vi41jmn5fahmrqgz38kl4a0",
+        "fields": {
+            "session_data": "ZmZhZGNjZmZhOGFjODQxNmVhOTIxMmVkOWU3MzY5OGQ3ZDFlNDQ2Mjp7InNob3BwaW5nbGlzdCI6W119",
+            "expire_date": "2020-11-30T22:54:17.792Z"
+        }
+    },
+    {
+        "model": "sites.site",
+        "pk": 1,
+        "fields": {
+            "domain": "example.com",
+            "name": "example.com"
+        }
+    },
+    {
+        "model": "flatpages.flatpage",
+        "pk": 1,
+        "fields": {
+            "url": "/about-author/",
+            "title": "\u041e\u0431 \u0430\u0432\u0442\u043e\u0440\u0435",
+            "content": "<p>\u041c\u0435\u043d\u044f \u0437\u043e\u0432\u0443\u0442 \u0421\u0435\u0440\u0433\u0435\u0439 \u041f\u043e\u0433\u043e\u0440\u0435\u043b\u043e\u0432, \u044f Python-\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a. </p>\r\n<p>\u0421 \u0444\u0435\u0432\u0440\u0430\u043b\u044f \u043f\u043e \u043e\u043a\u0442\u044f\u0431\u0440\u044c 2020 \u0433\u043e\u0434\u0430 \u043f\u0440\u043e\u0445\u043e\u0434\u0438\u043b \u043a\u0443\u0440\u0441 Python-\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0430 \u043e\u0442 <a href=\"https://praktikum.yandex.ru/\" target=\"_blank\">\u042f\u043d\u0434\u0435\u043a\u0441.\u041f\u0440\u0430\u043a\u0442\u0438\u043a\u0443\u043c\u0430</a>. \u041d\u0430\u0443\u0447\u0438\u043b\u0441\u044f \u043d\u0430\u0441\u0442\u0440\u0430\u0438\u0432\u0430\u0442\u044c \u0440\u0430\u0431\u043e\u0447\u0435\u0435 \u043e\u043a\u0440\u0443\u0436\u0435\u043d\u0438\u0435, \u0440\u0430\u0431\u043e\u0442\u0430\u0442\u044c \u0441 \u0433\u0438\u0442\u043e\u043c (\u0438 \u0440\u0435\u0448\u0430\u0442\u044c \u043a\u043e\u043d\u0444\u043b\u0438\u043a\u0442\u044b). \u0420\u0430\u0431\u043e\u0442\u0430\u043b \u0441 \u0432\u043d\u0435\u0448\u043d\u0438\u043c\u0438 API \u0438 \u043d\u0435 \u0437\u0430\u0431\u044b\u0432\u0430\u043b \u043e \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 \u043c\u043e\u0435\u0433\u043e \u043a\u043e\u0434\u0430. \u041f\u0440\u043e\u0445\u043e\u0434\u0438\u043b \u043a\u043e\u0434-\u0440\u0435\u0432\u044c\u044e \u0438 \u0440\u0430\u0431\u043e\u0442\u0430\u043b \u0432 \u043a\u043e\u043c\u0430\u043d\u0434\u0435 \u0441 \u0434\u0440\u0443\u0433\u0438\u043c\u0438 \u0441\u0442\u0443\u0434\u0435\u043d\u0442\u0430\u043c\u0438 \u043d\u0430\u0434 \u043e\u0431\u0449\u0438\u043c \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u043c.<br>\r\n\u0414\u043e \u044d\u0442\u043e\u0433\u043e 8 \u043b\u0435\u0442 \u043f\u0440\u043e\u0440\u0430\u0431\u043e\u0442\u0430\u043b \u0432 \u0441\u0444\u0435\u0440\u0435 BTL \u0432 \u0440\u0435\u043a\u043b\u0430\u043c\u043d\u043e\u0439 \u0438\u043d\u0434\u0443\u0441\u0442\u0440\u0438\u0438. \u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0435 \u0433\u043e\u0434\u044b \u0432 \u043f\u043e\u0437\u0438\u0446\u0438\u0438 Senior Project manager \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0438\u043b \u043a\u043e\u043c\u0430\u043d\u0434\u043e\u0439 \u043c\u0435\u043d\u0435\u0434\u0436\u0435\u0440\u043e\u0432 \u0438 \u043a\u043e\u043e\u0440\u0434\u0438\u043d\u0430\u0442\u043e\u0440\u043e\u0432, \u043e\u0442\u0432\u0435\u0447\u0430\u043b \u0437\u0430 \u0440\u0430\u0441\u0447\u0435\u0442 \u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0443 \u0441\u043c\u0435\u0442. \u0412 \u0445\u043e\u0434\u0435 \u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0432 \u043e\u0442\u0432\u0435\u0447\u0430\u043b \u0437\u0430 KPI, \u043e\u0431\u0449\u0430\u043b\u0441\u044f \u0441 \u043f\u043e\u0434\u0440\u044f\u0434\u0447\u0438\u043a\u0430\u043c\u0438 \u0432 \u041c\u043e\u0441\u043a\u0432\u0435 \u0438 \u0420\u0435\u0433\u0438\u043e\u043d\u0430\u0445. \u041f\u0440\u043e\u0432\u043e\u0434\u0438\u043b \u0430\u043d\u0430\u043b\u0438\u0437 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u043e\u0432 \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u0438 \u043f\u0438\u0441\u0430\u043b \u0438\u0442\u043e\u0433\u043e\u0432\u044b\u0435 \u043e\u0442\u0447\u0435\u0442\u044b.</p>\r\n\r\n<p>\u041f\u0440\u043e\u0440\u0430\u0431\u043e\u0442\u0430\u0432 \u0437\u0430 \u044d\u0442\u0438 8 \u043b\u0435\u0442 \u0432 \u043b\u0438\u0434\u0438\u0440\u0443\u044e\u0449\u0438\u0445 \u0430\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u0430\u0445 (qWell.marketing, Index Group, E:mg, Diversity) \u043f\u043e\u043d\u044f\u043b, \u0447\u0442\u043e \u043f\u043e\u043b\u0443\u0447\u0438\u043b \u043e\u0442 BTL \u0432\u0441\u0435, \u0447\u0442\u043e \u043f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043b \u0434\u043b\u044f \u0441\u0432\u043e\u0435\u0433\u043e \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044f. \u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0441\u0435\u0431\u044f \u043a\u0430\u043a \u043f\u0440\u043e\u0444\u0435\u0441\u0441\u0438\u043e\u043d\u0430\u043b\u0430 \u044f \u0432\u0438\u0436\u0443 \u0432 \u0441\u0444\u0435\u0440\u0435 IT.<br>\r\n\u0423\u0431\u0435\u0434\u0438\u043b\u0441\u044f \u0432 \u044d\u0442\u043e\u043c \u0443\u0441\u043f\u0435\u0448\u043d\u043e \u043e\u0441\u0432\u043e\u0438\u0432 \u043a\u0443\u0440\u0441 \u042f\u043d\u0434\u0435\u043a\u0441.\u041f\u0440\u0430\u043a\u0442\u0438\u043a\u0443\u043c\u0430. \u0422\u0435\u043f\u0435\u0440\u044c \u0432\u0441\u0435 \u0441\u0432\u043e\u0431\u043e\u0434\u043d\u043e\u0435 \u0432\u0440\u0435\u043c\u044f \u0441\u0442\u0430\u0440\u0430\u044e\u0441\u044c \u0443\u0434\u0435\u043b\u044f\u0442\u044c \u0438\u0437\u0443\u0447\u0435\u043d\u0438\u044e \u043d\u043e\u0432\u044b\u0445 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0439 \u0438 \u0444\u0440\u0435\u0439\u043c\u0432\u043e\u0440\u043a\u043e\u0432.</p>\r\n\r\n<p>\u0412 \u043f\u043b\u0430\u043d\u0430\u0445 \u0443\u0441\u0438\u043b\u0438\u0442\u044c \u0441\u0432\u043e\u0438 \u0437\u043d\u0430\u043d\u0438\u044f \u043f\u043e \u0447\u0430\u0441\u0442\u0438 Django, \u0438\u0437\u0443\u0447\u0438\u0442\u044c Flask, \u043f\u043e\u0434\u0442\u044f\u043d\u0443\u0442\u044c Git \u0438 Docker, \u0443\u0433\u043b\u0443\u0431\u0438\u0442\u044c\u0441\u044f \u0432 Redis \u0438 Celery.<br>\u0421\u0435\u0439\u0447\u0430\u0441 \u043e\u0441\u043d\u043e\u0432\u043d\u0430\u044f \u0446\u0435\u043b\u044c - \u043d\u0430\u0447\u0430\u0442\u044c \u043a\u0430\u0440\u044c\u0435\u0440\u0443 \u0431\u044d\u043a\u0435\u043d\u0434-\u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0430 \u0438 \u0447\u0435\u0440\u0435\u0437 5 \u043b\u0435\u0442 \u0434\u043e\u0440\u0430\u0441\u0442\u0438 \u0434\u043e \u0442\u0438\u043c\u043b\u0438\u0434\u0430.</p>\r\n\r\n<p class=\"center\">\r\n<a href=\"https://github.com/SergePogorelov/\" target=\"_blank\"><img src=\"https://fusion.li/images/github.svg\"  width=\"80\" height=\"80\" alt=\"https://github.com/SergePogorelov/\"></a>\r\n&ensp;&ensp;&ensp;\r\n<a href=\"https://t.me/Serge_pogorelov\" target=\"_blank\"><img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/200px-Telegram_logo.svg.png\"  width=\"85\" height=\"85\" alt=\"https://t.me/Serge_pogorelov\"></a>\r\n&ensp;&ensp;&ensp;\r\n<a href=\"https://hh.ru/resume/241f0d64ff085739540039ed1f743252557369\" target=\"_blank\"><img src=\"https://cs8.pikabu.ru/avatars/2639/x2639842-575536793.png\"  width=\"85\" height=\"85\" alt=\"Serge_pogorelov-HH\"></a>\r\n</p>",
+            "enable_comments": false,
+            "template_name": "",
+            "registration_required": false,
+            "sites": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "flatpages.flatpage",
+        "pk": 2,
+        "fields": {
+            "url": "/about-spec/",
+            "title": "\u0412 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u044b",
+            "content": "<a href=\"https://www.python.org/\" target=\"_blank\">Python3+</a><br>\r\n<a href=\"https://www.djangoproject.com/\" target=\"_blank\">Django 2+</a><br>\r\n<a href=\"https://pypi.org/project/Pillow/\" target=\"_blank\">Pillow</a><br>\r\n<a href=\"https://pypi.org/project/sorl-thumbnail/\" target=\"_blank\">Sorl-thumbnail</a><br>\r\n<a href=\"https://pypi.org/project/django-debug-toolbar/\" target=\"_blank\">Django-debug-toolbar</a><br>\r\n<a href=\"https://cloud.yandex.ru/\" target=\"_blank\">Yandex Cloud</a><br>\r\n<a href=\"https://www.linux.org/\" target=\"_blank\">Lunix</a><br>\r\n<a href=\"https://www.postgresql.org/\" target=\"_blank\">PostgreSQL</a><br>\r\n<a href=\"https://gunicorn.org/)\" target=\"_blank\">Gunicorn</a><br>\r\n<a href=\"https://nginx.org/\")\" target=\"_blank\">Nginx</a><br>\r\n<br><br>\r\n<a href=\"https://github.com/SergePogorelov/foodgram-project\"  target=\"_blank\">\u0418\u0441\u0445\u043e\u0434\u043d\u044b\u0439 \u043a\u043e\u0434 \u0438 \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u044f \u043f\u043e \u0440\u0430\u0437\u0432\u0435\u0440\u0442\u044b\u0432\u0430\u043d\u0438\u044e</a>",
+            "enable_comments": false,
+            "template_name": "",
+            "registration_required": false,
+            "sites": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||022bdb636740d9f75b0255ccd3757fd0",
+        "fields": {
+            "value": "{\"name\": \"cache/26/ab/26ab263c72e6f6cbb1b2efde8d95aa11.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||04f26e6b215f46dac35530c5636ed926",
+        "fields": {
+            "value": "{\"name\": \"cache/b5/e6/b5e627a51642fb2d6bf74939462a89c7.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||0835f44fe4eaf23cd6e6dcc8e233d628",
+        "fields": {
+            "value": "{\"name\": \"cache/64/c8/64c883081eb0d769d2e4ce8507a2b261.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||0f5ebb2f69d6fe308a3b13d3096b0fed",
+        "fields": {
+            "value": "{\"name\": \"cache/6c/d3/6cd3473b896f98128ed23f306df590c4.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||1586bbb86bc11ff5175e1a1bc5d85a96",
+        "fields": {
+            "value": "{\"name\": \"cache/4f/6d/4f6d5e6344f990a6f21e9b2b86f129c3.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [90, 90]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||2657e1494033f945bfd365da848a40b3",
+        "fields": {
+            "value": "{\"name\": \"cache/90/d0/90d0f454a2a04b85673f13cd08aaeb42.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||2b373fd4d1e29f271c0fae0912f85bed",
+        "fields": {
+            "value": "{\"name\": \"recipes/testCardImg_E5RFHUa.png\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||2c888e5eb3f96e347d438f07a78beaa3",
+        "fields": {
+            "value": "{\"name\": \"cache/bd/b5/bdb5bf687045db91ebe96511d058de82.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||3625215a57cdad1a554c668cbdb96a02",
+        "fields": {
+            "value": "{\"name\": \"cache/90/07/90076546125a1995a052ac212f58d7af.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||3afa9698542d1345d0c86cc0bdd982b6",
+        "fields": {
+            "value": "{\"name\": \"recipes/1.png\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [330, 304]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||47f6e22589acd59192d2afaf64514eef",
+        "fields": {
+            "value": "{\"name\": \"cache/37/f5/37f5a2022874968c98ec19a0abaa7e91.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||4f03393511619567ac919910d9c55a1f",
+        "fields": {
+            "value": "{\"name\": \"cache/d4/a8/d4a8188e6b16ad6fffdb9af5e4aa062a.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||55a1ee3176a8e35185c49f42465e2830",
+        "fields": {
+            "value": "{\"name\": \"cache/57/ee/57ee8f90ed87e39e562678bc02ec98c1.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||568a3714ecd0a6636200065a60177348",
+        "fields": {
+            "value": "{\"name\": \"recipes/13.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [1200, 800]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||5b763e3df4d348d41dbad5944560ec47",
+        "fields": {
+            "value": "{\"name\": \"cache/1f/b3/1fb393ea422ba6a1b8b2ea7b0fc57241.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [90, 90]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||77d94c44725d22a72195dcd825da4a55",
+        "fields": {
+            "value": "{\"name\": \"cache/25/ed/25ed22e39c90c062f70e433efee3f0af.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||7a38a6ce9239c377f51e5df4e9028790",
+        "fields": {
+            "value": "{\"name\": \"cache/8f/69/8f69d2330cb8205075e84bee8936454f.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||7a542c2e6c4ba8304cd6ac8decaca110",
+        "fields": {
+            "value": "{\"name\": \"cache/d2/41/d2414ee5368c9e61e8c90052c34033b8.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [90, 90]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||822d245acd44741911db366c2d38a2fe",
+        "fields": {
+            "value": "{\"name\": \"cache/44/24/4424fa0f2b0809ad2760762df0316626.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||837ac9e36d8d42e886d40724fecc7bc2",
+        "fields": {
+            "value": "{\"name\": \"recipes/15.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [2880, 1800]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||84fab74c2aef3d26fe76994d7928248d",
+        "fields": {
+            "value": "{\"name\": \"cache/84/f4/84f4365500b8409a08a279cc9b30a74b.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [72, 72]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||866df68a7b11fe357d1d1b1382b4ddc0",
+        "fields": {
+            "value": "{\"name\": \"recipes/6.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [2000, 1333]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||8801c509a00ff1db8e723d8a6940fef0",
+        "fields": {
+            "value": "{\"name\": \"cache/2b/ab/2babe3179e14d752b51f9adf108e8cfa.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [90, 90]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||89282c7f25db4d1729267d4d0d65a041",
+        "fields": {
+            "value": "{\"name\": \"cache/28/db/28db934fcd2bd33d2176fb55741ac613.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||8ba76ad3bdfe77b1a997f927cfcc064d",
+        "fields": {
+            "value": "{\"name\": \"cache/64/2f/642f5ddd78adc820b2858fcc91b5c7e5.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [90, 90]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||8be048d135319605096873870d053687",
+        "fields": {
+            "value": "{\"name\": \"cache/db/da/dbda450c1181eb5fd5e117ebe4818809.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||97a7ebf6a480271a6f79338ba968e16b",
+        "fields": {
+            "value": "{\"name\": \"cache/a6/1a/a61a6c1c1beabf93cf422f220f05905c.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||9a9d181394c6b3decb54f8d981ce0e21",
+        "fields": {
+            "value": "{\"name\": \"cache/e8/20/e820232dc2d11247b53ff91ffe157cf8.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [90, 90]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||a4e52d1f07ecabe02b3c329ae9824424",
+        "fields": {
+            "value": "{\"name\": \"cache/8a/a8/8aa811846f57bd81e494bd75ca55bb5e.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||aec6a1a4f6f3c42a3c0691390336b77c",
+        "fields": {
+            "value": "{\"name\": \"recipes/1.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [1366, 768]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||b16907870a0d84088801c252cf87ec8f",
+        "fields": {
+            "value": "{\"name\": \"recipes/1_NIbnmaK.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [1366, 768]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||b5f8a10af32ed70fea83a1f5b4358b75",
+        "fields": {
+            "value": "{\"name\": \"cache/c8/a3/c8a3f3ff46913bc8b99c6f2149f9b6ec.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [72, 72]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||c5192cdb4402e114117ad984b443af91",
+        "fields": {
+            "value": "{\"name\": \"cache/d4/44/d444462befbf93fba44f710d45186768.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||c905dd6949bf5896ad165bb18bbb36df",
+        "fields": {
+            "value": "{\"name\": \"recipes/testCardImg_e3oyaVV.png\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||c9674bbe8fbb3a5f19f7efa89ecbe1a5",
+        "fields": {
+            "value": "{\"name\": \"recipes/4.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [800, 600]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||cce5b15bea152a3a75280f531a46fc93",
+        "fields": {
+            "value": "{\"name\": \"recipes/5.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [1024, 682]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||cf95bc7cbd32988d3db3a1a39d72219f",
+        "fields": {
+            "value": "{\"name\": \"cache/73/34/73347491e9d7c39c3232fea1baea9523.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [72, 72]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||d1fcf5f25890274a99e569c17db42cdb",
+        "fields": {
+            "value": "{\"name\": \"cache/60/e0/60e0cfaea140d2ff08861f79b92f1faf.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||d20f1ac3804430a1b0809488ec01fda7",
+        "fields": {
+            "value": "{\"name\": \"cache/a4/7b/a47b05caacfa1e42902832c3e44b35f6.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||d8b2e41d3a2774cdefb01ff3514f0d97",
+        "fields": {
+            "value": "{\"name\": \"cache/47/af/47af7e121fdf0650d12ce5d7d772849e.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||d9e43c828dae4886ae54944165f1b625",
+        "fields": {
+            "value": "{\"name\": \"cache/9f/0f/9f0f333a2bb15c634a154a17ee9ec6f9.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [72, 72]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||e3bd44cc15687cdea1ea4e8ad1eb9cc1",
+        "fields": {
+            "value": "{\"name\": \"recipes/2.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [800, 600]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||ebb93365d3ab28e04e0ec092f03f85b7",
+        "fields": {
+            "value": "{\"name\": \"cache/8d/18/8d18490ba3a659852827b3cf0f599595.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [364, 240]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||fb6714a117d3685683deb66f1e948dfa",
+        "fields": {
+            "value": "{\"name\": \"recipes/3.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [1920, 1200]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||fb931a92285f59bc538e42b3c19ba1b5",
+        "fields": {
+            "value": "{\"name\": \"cache/ef/08/ef0887659bcb09680e5418cc2315fd28.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||image||ff29a08904591557fffcfd4ce1fa0762",
+        "fields": {
+            "value": "{\"name\": \"cache/a1/d4/a1d44a8d95ad4cd9be87b5f925e6fbb8.jpg\", \"storage\": \"django.core.files.storage.FileSystemStorage\", \"size\": [480, 480]}"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||2b373fd4d1e29f271c0fae0912f85bed",
+        "fields": {
+            "value": "[\"a4e52d1f07ecabe02b3c329ae9824424\", \"3625215a57cdad1a554c668cbdb96a02\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||3afa9698542d1345d0c86cc0bdd982b6",
+        "fields": {
+            "value": "[\"7a542c2e6c4ba8304cd6ac8decaca110\", \"77d94c44725d22a72195dcd825da4a55\", \"ebb93365d3ab28e04e0ec092f03f85b7\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||568a3714ecd0a6636200065a60177348",
+        "fields": {
+            "value": "[\"8be048d135319605096873870d053687\", \"55a1ee3176a8e35185c49f42465e2830\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||837ac9e36d8d42e886d40724fecc7bc2",
+        "fields": {
+            "value": "[\"1586bbb86bc11ff5175e1a1bc5d85a96\", \"4f03393511619567ac919910d9c55a1f\", \"ff29a08904591557fffcfd4ce1fa0762\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||866df68a7b11fe357d1d1b1382b4ddc0",
+        "fields": {
+            "value": "[\"97a7ebf6a480271a6f79338ba968e16b\", \"d20f1ac3804430a1b0809488ec01fda7\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||aec6a1a4f6f3c42a3c0691390336b77c",
+        "fields": {
+            "value": "[\"fb931a92285f59bc538e42b3c19ba1b5\", \"9a9d181394c6b3decb54f8d981ce0e21\", \"c5192cdb4402e114117ad984b443af91\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||b16907870a0d84088801c252cf87ec8f",
+        "fields": {
+            "value": "[\"cf95bc7cbd32988d3db3a1a39d72219f\", \"8801c509a00ff1db8e723d8a6940fef0\", \"2c888e5eb3f96e347d438f07a78beaa3\", \"04f26e6b215f46dac35530c5636ed926\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||c905dd6949bf5896ad165bb18bbb36df",
+        "fields": {
+            "value": "[\"d8b2e41d3a2774cdefb01ff3514f0d97\", \"022bdb636740d9f75b0255ccd3757fd0\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||c9674bbe8fbb3a5f19f7efa89ecbe1a5",
+        "fields": {
+            "value": "[\"2657e1494033f945bfd365da848a40b3\", \"d1fcf5f25890274a99e569c17db42cdb\", \"84fab74c2aef3d26fe76994d7928248d\", \"5b763e3df4d348d41dbad5944560ec47\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||cce5b15bea152a3a75280f531a46fc93",
+        "fields": {
+            "value": "[\"0f5ebb2f69d6fe308a3b13d3096b0fed\", \"822d245acd44741911db366c2d38a2fe\", \"8ba76ad3bdfe77b1a997f927cfcc064d\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||e3bd44cc15687cdea1ea4e8ad1eb9cc1",
+        "fields": {
+            "value": "[\"7a38a6ce9239c377f51e5df4e9028790\", \"b5f8a10af32ed70fea83a1f5b4358b75\", \"0835f44fe4eaf23cd6e6dcc8e233d628\"]"
+        }
+    },
+    {
+        "model": "thumbnail.kvstore",
+        "pk": "sorl-thumbnail||thumbnails||fb6714a117d3685683deb66f1e948dfa",
+        "fields": {
+            "value": "[\"d9e43c828dae4886ae54944165f1b625\", \"47f6e22589acd59192d2afaf64514eef\", \"89282c7f25db4d1729267d4d0d65a041\"]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 1,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 1,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 1,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 1,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add \u0418\u043d\u0433\u0440\u0438\u0434\u0438\u0435\u043d\u0442",
+            "content_type": 2,
+            "codename": "add_ingredient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change \u0418\u043d\u0433\u0440\u0438\u0434\u0438\u0435\u043d\u0442",
+            "content_type": 2,
+            "codename": "change_ingredient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete \u0418\u043d\u0433\u0440\u0438\u0434\u0438\u0435\u043d\u0442",
+            "content_type": 2,
+            "codename": "delete_ingredient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view \u0418\u043d\u0433\u0440\u0438\u0434\u0438\u0435\u043d\u0442",
+            "content_type": 2,
+            "codename": "view_ingredient"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add \u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0438\u043d\u0433\u0440\u0438\u0434\u0438\u0435\u043d\u0442\u043e\u0432",
+            "content_type": 3,
+            "codename": "add_ingredientvalue"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change \u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0438\u043d\u0433\u0440\u0438\u0434\u0438\u0435\u043d\u0442\u043e\u0432",
+            "content_type": 3,
+            "codename": "change_ingredientvalue"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete \u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0438\u043d\u0433\u0440\u0438\u0434\u0438\u0435\u043d\u0442\u043e\u0432",
+            "content_type": 3,
+            "codename": "delete_ingredientvalue"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view \u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0438\u043d\u0433\u0440\u0438\u0434\u0438\u0435\u043d\u0442\u043e\u0432",
+            "content_type": 3,
+            "codename": "view_ingredientvalue"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add \u0420\u0435\u0446\u0435\u043f\u0442",
+            "content_type": 4,
+            "codename": "add_recipe"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change \u0420\u0435\u0446\u0435\u043f\u0442",
+            "content_type": 4,
+            "codename": "change_recipe"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete \u0420\u0435\u0446\u0435\u043f\u0442",
+            "content_type": 4,
+            "codename": "delete_recipe"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view \u0420\u0435\u0446\u0435\u043f\u0442",
+            "content_type": 4,
+            "codename": "view_recipe"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430",
+            "content_type": 5,
+            "codename": "add_subscription"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430",
+            "content_type": 5,
+            "codename": "change_subscription"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430",
+            "content_type": 5,
+            "codename": "delete_subscription"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view \u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430",
+            "content_type": 5,
+            "codename": "view_subscription"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add \u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435",
+            "content_type": 6,
+            "codename": "add_favorite"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change \u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435",
+            "content_type": 6,
+            "codename": "change_favorite"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete \u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435",
+            "content_type": 6,
+            "codename": "delete_favorite"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view \u0418\u0437\u0431\u0440\u0430\u043d\u043d\u043e\u0435",
+            "content_type": 6,
+            "codename": "view_favorite"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 7,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 7,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 7,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 7,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 8,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 8,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 8,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 8,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 9,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 9,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 9,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 9,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 10,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 10,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 10,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 10,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 11,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 11,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 11,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 11,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add site",
+            "content_type": 12,
+            "codename": "add_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change site",
+            "content_type": 12,
+            "codename": "change_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete site",
+            "content_type": 12,
+            "codename": "delete_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view site",
+            "content_type": 12,
+            "codename": "view_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add flat page",
+            "content_type": 13,
+            "codename": "add_flatpage"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change flat page",
+            "content_type": 13,
+            "codename": "change_flatpage"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete flat page",
+            "content_type": 13,
+            "codename": "delete_flatpage"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view flat page",
+            "content_type": 13,
+            "codename": "view_flatpage"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add kv store",
+            "content_type": 14,
+            "codename": "add_kvstore"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change kv store",
+            "content_type": 14,
+            "codename": "change_kvstore"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete kv store",
+            "content_type": 14,
+            "codename": "delete_kvstore"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view kv store",
+            "content_type": 14,
+            "codename": "view_kvstore"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$aOfwgr4EhZC8$jgVnp4Syarqn7NSTSS7tLWI01xtLMel+T55S34Zebp0=",
+            "last_login": "2020-11-16T21:21:46Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "\u0413\u043e\u0440\u0434\u043e\u043d \u0414\u0436\u0435\u0439\u043c\u0441 \u0420\u0430\u043c\u0437\u0438",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-11-16T21:21:15Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$6kZkRTjVqqGe$yZhdzdGipLS7ZfER6CdaOcX53GI60g07AaGNcWB8X2g=",
+            "last_login": "2020-11-16T22:11:40.023Z",
+            "is_superuser": false,
+            "username": "Gordon",
+            "first_name": "\u0413\u043e\u0440\u0434\u043e\u043d \u0414\u0436\u0435\u0439\u043c\u0441 \u0420\u0430\u043c\u0437\u0438",
+            "last_name": "",
+            "email": "Gordon@food.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-11-16T22:11:39.740Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$vYW5mY53G0fP$uoxdEJzUM1OPvCgUudhx+H5A128Bwsmk4Qs1V/3U+yI=",
+            "last_login": "2020-11-16T22:21:52.267Z",
+            "is_superuser": false,
+            "username": "test@test.ru",
+            "first_name": "test@test.ru",
+            "last_name": "",
+            "email": "test@test.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-11-16T22:21:43.609Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 5,
+        "fields": {
+            "password": "pbkdf2_sha256$150000$raHVSYgMLVj0$085oK7zbEvd7pO6BKjZYfn23P8XFXQQXYX9McK/l3hI=",
+            "last_login": "2020-11-16T22:33:30.449Z",
+            "is_superuser": false,
+            "username": "Marko",
+            "first_name": "\u041c\u0430\u0440\u043a\u043e \u041f\u0438\u0440\u0440 \u0423\u0430\u0439\u0442",
+            "last_name": "",
+            "email": "Marko@fg.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2020-11-16T22:33:30.235Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 4,
+        "fields": {
+            "author": 3,
+            "name": "\u041f\u0438\u0446\u0446\u0430 \u0441 \u043f\u043e\u043c\u0438\u0434\u043e\u0440\u0430\u043c\u0438, \u0433\u0440\u0438\u0431\u0430\u043c\u0438 \u0438 \u0441\u044b\u0440\u043e\u043c",
+            "slug": "pitstsa-s-pomidorami-gribami-i-syrom",
+            "breakfast": false,
+            "lunch": true,
+            "dinner": true,
+            "cooking_time": 90,
+            "description": "\u0411\u0435\u0440\u0435\u043c \u043c\u0438\u0441\u043a\u0443, \u043f\u0440\u043e\u0441\u0435\u0438\u0432\u0430\u0435\u043c \u0442\u0443\u0434\u0430 \u043c\u0443\u043a\u0443 (\u0436\u0435\u043b\u0430\u0442\u0435\u043b\u044c\u043d\u043e - \u0432\u044b\u0441\u0448\u0435\u0433\u043e \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0430). \r\n\u0412 \u0441\u0442\u0430\u043a\u0430\u043d\u0435 \u0441\u043c\u0435\u0448\u0438\u0432\u0430\u0435\u043c 100 \u043c\u043b \u0442\u0435\u043f\u043b\u043e\u0439 \u0432\u043e\u0434\u044b \u0438 \u0441\u0443\u0445\u0438\u0435 \u0430\u043a\u0442\u0438\u0432\u043d\u044b\u0435 \u0434\u0440\u043e\u0436\u0436\u0438. \u0420\u0430\u0437\u0432\u043e\u0434\u0438\u043c, \u043f\u043e\u043a\u0430 \u043d\u0435 \u0440\u0430\u0441\u0442\u0432\u043e\u0440\u044f\u0442\u0441\u044f. \r\n\u0412\u043e\u0434\u0438\u0447\u043a\u0443 \u0441 \u0440\u0430\u0441\u0442\u0432\u043e\u0440\u0435\u043d\u043d\u044b\u043c\u0438 \u0434\u0440\u043e\u0436\u0436\u0430\u043c\u0438 \u0432\u043b\u0438\u0432\u0430\u0435\u043c \u0432 \u043c\u0443\u043a\u0443. \u0422\u0443\u0434\u0430 \u0436\u0435 \u2014 \u0441\u043e\u043b\u044c \u0438 \u043e\u043b\u0438\u0432\u043a\u043e\u0432\u043e\u0435 \u043c\u0430\u0441\u043b\u043e. \r\n\u041f\u043e\u0440\u0446\u0438\u044f\u043c\u0438 \u043f\u043e\u0434\u043b\u0438\u0432\u0430\u044f \u043e\u0441\u0442\u0430\u0432\u0448\u0443\u044e\u0441\u044f \u0442\u0435\u043f\u043b\u0443\u044e \u0432\u043e\u0434\u0443, \u0430\u043a\u0442\u0438\u0432\u043d\u044b\u043c\u0438 \u0434\u0432\u0438\u0436\u0435\u043d\u0438\u044f\u043c\u0438 \u0440\u0443\u043a \u0437\u0430\u043c\u0435\u0448\u0438\u0432\u0430\u0435\u043c \u0442\u0435\u0441\u0442\u043e. \u041c\u0435\u0441\u0438\u0442\u044c \u0442\u0435\u0441\u0442\u043e \u043d\u0443\u0436\u043d\u043e \u043e\u043a\u043e\u043b\u043e 10 \u043c\u0438\u043d\u0443\u0442. \r\n\u0418\u0437 \u0437\u0430\u043c\u0435\u0448\u0435\u043d\u043d\u043e\u0433\u043e \u0442\u0435\u0441\u0442\u0430 \u0441\u043a\u0430\u0442\u044b\u0432\u0430\u0435\u043c \u0448\u0430\u0440\u0438\u043a. \u041e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u043c \u0435\u0433\u043e \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u043d\u0430 60 \u043c\u0438\u043d\u0443\u0442 \u0432 \u0442\u0435\u043f\u043b\u043e\u043c \u043c\u0435\u0441\u0442\u0435. \u0412\u0430\u0436\u043d\u043e: \u0435\u0441\u043b\u0438 \u0432\u044b \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043b\u0438 \u043e\u0431\u044b\u0447\u043d\u044b\u0435, \u0430 \u043d\u0435 \u043c\u0433\u043d\u043e\u0432\u0435\u043d\u043d\u044b\u0435 \u0441\u0443\u0445\u0438\u0435 \u0434\u0440\u043e\u0436\u0436\u0438, \u0442\u043e \u0442\u0435\u0441\u0442\u043e \u043f\u0440\u0438\u0434\u0435\u0442\u0441\u044f \u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043d\u0435 \u043d\u0430 1 \u0447\u0430\u0441, \u0430 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u043d\u0430 2-3. \u041f\u043e\u043a\u0430 \u043d\u0435 \u043f\u043e\u0434\u043d\u0438\u043c\u0435\u0442\u0441\u044f. \r\n\u0418\u0442\u0430\u043a, \u0432\u0430\u0448\u0435 \u0442\u0435\u0441\u0442\u043e \u043f\u043e\u0434\u043d\u044f\u043b\u043e\u0441\u044c. \u0414\u0430\u043b\u0435\u0435 \u0435\u0433\u043e \u0440\u0430\u0437\u0440\u0435\u0437\u0430\u0435\u043c \u043d\u0430 \u0434\u0432\u0435 \u0440\u0430\u0432\u043d\u044b\u0435 \u0447\u0430\u0441\u0442\u0438, \u043a\u0430\u0436\u0434\u0443\u044e \u0440\u0430\u0441\u043a\u0430\u0442\u044b\u0432\u0430\u0435\u043c \u0432 \u043f\u043b\u0430\u0441\u0442 \u0434\u0438\u0430\u043c\u0435\u0442\u0440\u043e\u043c 23-26 \u0441\u043c. \r\n\u0414\u0443\u0445\u043e\u0432\u043a\u0443 \u0442\u0435\u043c \u0432\u0440\u0435\u043c\u0435\u043d\u0435\u043c \u0443\u0436\u0435 \u043c\u043e\u0436\u043d\u043e \u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043f\u0440\u043e\u0433\u0440\u0435\u0432\u0430\u0442\u044c\u0441\u044f \u0434\u043e 230 \u0433\u0440\u0430\u0434\u0443\u0441\u043e\u0432. \r\n\u041d\u0430 \u0442\u0435\u0441\u0442\u043e \u0434\u043b\u044f \u043f\u0438\u0446\u0446\u044b \u043d\u0430\u043c\u0430\u0437\u044b\u0432\u0430\u0435\u043c \u0441\u043e\u0443\u0441 (\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u043e! \u0418\u043d\u0430\u0447\u0435 \u043f\u0438\u0446\u0446\u0430 \u0441 \u043f\u043e\u043c\u0438\u0434\u043e\u0440\u0430\u043c\u0438 \u0438 \u0441\u044b\u0440\u043e\u043c \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u0441\u044f \u0441\u0443\u0445\u043e\u0439). \u0421\u0432\u0435\u0440\u0445\u0443 \u043f\u043e\u0441\u044b\u043f\u0430\u0435\u043c \u0442\u0435\u0440\u0442\u044b\u043c \u0441\u044b\u0440\u043e\u043c \u0438 \u0432\u044b\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u0435\u043c \u0442\u043e\u043d\u043a\u043e \u043d\u0430\u0440\u0435\u0437\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u043c\u0438\u0434\u043e\u0440\u044b. \u0415\u0441\u043b\u0438 \u0445\u043e\u0442\u0438\u0442\u0435, \u043c\u043e\u0436\u0435\u0442\u0435 \u043f\u043e\u0441\u044b\u043f\u0430\u0442\u044c \u043f\u0438\u0446\u0446\u0443 \u0441\u043f\u0435\u0446\u0438\u044f\u043c\u0438 - \u043d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u0431\u0430\u0437\u0438\u043b\u0438\u043a\u043e\u043c. \r\n\u0417\u0430\u043f\u0435\u043a\u0430\u0435\u043c \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e 15-20 \u043c\u0438\u043d\u0443\u0442. \u0417\u0430\u0432\u0438\u0441\u0438\u0442 \u043e\u0442 \u0434\u0443\u0445\u043e\u0432\u043a\u0438. \u0422\u0430\u043a \u0447\u0442\u043e \u0443\u0436\u0435 \u043d\u0430 15\u043e\u0439 \u043c\u0438\u043d\u0443\u0442\u0435 \u0437\u0430\u043f\u0435\u043a\u0430\u043d\u0438\u044f \u043d\u0430\u0447\u0438\u043d\u0430\u0439\u0442\u0435 \u0441\u043b\u0435\u0434\u0438\u0442\u044c \u0437\u0430 \u043f\u0438\u0446\u0446\u0435\u0439, \u0447\u0442\u043e\u0431\u044b \u043e\u043d\u0430 \u043d\u0435 \u043f\u043e\u0434\u0433\u043e\u0440\u0435\u043b\u0430. \r\n\r\n\u0412\u043e\u0442 \u0438 \u0432\u0441\u0435 - \u043f\u0438\u0446\u0446\u0430 \u0441 \u043f\u043e\u043c\u0438\u0434\u043e\u0440\u0430\u043c\u0438 \u0438 \u0441\u044b\u0440\u043e\u043c \u0433\u043e\u0442\u043e\u0432\u0430 \u043a \u043f\u043e\u0434\u0430\u0447\u0435 \u043d\u0430 \u0441\u0442\u043e\u043b. \u0420\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u044e \u0432\u0430\u043c \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u0441\u0431\u0440\u044b\u0437\u043d\u0443\u0442\u044c \u0435\u0435 \u043e\u043b\u0438\u0432\u043a\u043e\u0432\u044b\u043c \u043c\u0430\u0441\u043b\u043e\u043c \u043f\u0435\u0440\u0435\u0434 \u043f\u043e\u0434\u0430\u0447\u0435\u0439. \u041f\u043e\u0434\u0430\u0432\u0430\u0442\u044c, \u0435\u0441\u0442\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e, \u043d\u0443\u0436\u043d\u043e \u0432 \u0433\u043e\u0440\u044f\u0447\u0435\u043c \u0432\u0438\u0434\u0435.",
+            "image": "recipes/1_NIbnmaK.jpg",
+            "pub_date": "2020-11-16T22:17:45.117Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 5,
+        "fields": {
+            "author": 4,
+            "name": "test 123",
+            "slug": "test",
+            "breakfast": true,
+            "lunch": false,
+            "dinner": false,
+            "cooking_time": 12,
+            "description": "123 123",
+            "image": "recipes/1.png",
+            "pub_date": "2020-11-16T22:22:30.083Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 6,
+        "fields": {
+            "author": 3,
+            "name": "\u0421\u043e\u0447\u043d\u044b\u0439 \u0433\u043e\u0432\u044f\u0436\u044c\u0438 \u0441\u0442\u0435\u0439\u043a \u0441  \u0444\u0430\u0441\u043e\u043b\u044c\u044e",
+            "slug": "sochnyi-goviazhi-steik-s-fasoliu",
+            "breakfast": false,
+            "lunch": true,
+            "dinner": true,
+            "cooking_time": 30,
+            "description": "\u041a\u0440\u0443\u043f\u043d\u044b\u0435 \u0433\u043e\u0432\u044f\u0436\u044c\u0438 \u0441\u0442\u0435\u0439\u043a\u0438 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u0442\u0449\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u043f\u0440\u043e\u043c\u044b\u0442\u044c \u0432 \u043f\u0440\u043e\u0445\u043b\u0430\u0434\u043d\u043e\u0439 \u0432\u043e\u0434\u0435 \u0438 \u0432\u044b\u043b\u043e\u0436\u0438\u0442\u044c \u0438\u0445 \u043d\u0430 \u0431\u0443\u043c\u0430\u0436\u043d\u043e\u0435 \u043f\u043e\u043b\u043e\u0442\u0435\u043d\u0446\u0435, \u0434\u043e\u0436\u0434\u0430\u0442\u044c\u0441\u044f \u0442\u043e\u0433\u043e \u043c\u043e\u043c\u0435\u043d\u0442\u0430, \u043a\u043e\u0433\u0434\u0430 \u043e\u043d\u0438 \u043e\u0431\u0441\u043e\u0445\u043d\u0443\u0442, \u0437\u0430\u0442\u0435\u043c \u0441\u043e \u0432\u0441\u0435\u0445 \u0441\u0442\u043e\u0440\u043e\u043d \u0441\u043c\u0430\u0437\u0430\u0442\u044c \u043c\u044f\u0441\u043e \u043e\u043b\u0438\u0432\u043a\u043e\u0432\u044b\u043c \u043c\u0430\u0441\u043b\u043e\u043c \u0438 \u043f\u043e\u0441\u044b\u043f\u0430\u0442\u044c \u043c\u043e\u043b\u043e\u0442\u044b\u043c \u043f\u0435\u0440\u0446\u0435\u043c \u0438 \u043a\u0430\u043a\u0438\u043c\u0438-\u043d\u0438\u0431\u0443\u0434\u044c \u043f\u0440\u0438\u043f\u0440\u0430\u0432\u0430\u043c\u0438. \u0414\u0430\u043b\u0435\u0435 \u0433\u043e\u0432\u044f\u0436\u044c\u0438 \u0441\u0442\u0435\u0439\u043a\u0438 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u043e \u043f\u043e\u0441\u044b\u043f\u0430\u0442\u044c \u0441\u043e\u043b\u044c\u044e, \u0437\u0430\u0442\u0435\u043c \u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0434 \u043f\u043b\u0435\u043d\u043a\u043e\u0439 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u043d\u0430 \u0442\u0440\u0438\u0434\u0446\u0430\u0442\u044c \u043c\u0438\u043d\u0443\u0442, \u043f\u043e\u0441\u043b\u0435 \u044d\u0442\u043e\u0433\u043e \u043f\u043e \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 \u043e\u0431\u0436\u0430\u0440\u0438\u0442\u044c \u0438\u0445 \u0434\u043e \u0440\u0443\u043c\u044f\u043d\u043e\u0433\u043e \u0446\u0432\u0435\u0442\u0430 \u0441 \u043a\u0430\u0436\u0434\u043e\u0439 \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u043f\u043e \u0447\u0435\u0442\u044b\u0440\u0435 \u043c\u0438\u043d\u0443\u0442\u044b.\r\n\u0421\u043e\u0447\u043d\u044b\u0435 \u0433\u043e\u0432\u044f\u0436\u044c\u0438 \u0441\u0442\u0435\u0439\u043a\u0438 \u0441 \u043a\u0440\u0430\u0441\u043d\u043e\u0439 \u0444\u0430\u0441\u043e\u043b\u044c\u044e\r\n\r\n\u041a\u0430\u043a \u0442\u043e\u043b\u044c\u043a\u043e \u0432\u0441\u0435 \u0433\u043e\u0432\u044f\u0436\u044c\u0438 \u0441\u0442\u0435\u0439\u043a\u0438 \u0431\u0443\u0434\u0443\u0442 \u0433\u043e\u0442\u043e\u0432\u044b, \u0432\u044b\u043b\u043e\u0436\u0438\u0442\u044c \u0438\u0445 \u043d\u0430 \u0431\u043e\u043b\u044c\u0448\u043e\u0435 \u0431\u043b\u044e\u0434\u043e \u0438 \u043d\u0430\u043a\u0440\u044b\u0442\u044c \u043f\u0438\u0449\u0435\u0432\u043e\u0439 \u0444\u043e\u043b\u044c\u0433\u043e\u0439, \u043f\u043e\u0441\u043b\u0435 \u044d\u0442\u043e\u0433\u043e \u043f\u043e\u0447\u0438\u0441\u0442\u0438\u0442\u044c \u0447\u0435\u0441\u043d\u043e\u0447\u043d\u044b\u0435 \u0437\u0443\u0431\u0447\u0438\u043a\u0438 \u0438 \u043d\u0430\u0440\u0435\u0437\u0430\u0442\u044c \u0438\u0445 \u0442\u043e\u043d\u0435\u043d\u044c\u043a\u0438\u043c\u0438 \u043f\u043b\u0430\u0441\u0442\u0438\u043d\u043a\u0430\u043c\u0438. \u041e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u0438\u0437\u043c\u0435\u043b\u044c\u0447\u0435\u043d\u043d\u044b\u0439 \u0447\u0435\u0441\u043d\u043e\u043a \u0432 \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u0443 \u0438 \u043e\u0431\u0436\u0430\u0440\u0438\u0432\u0430\u0442\u044c \u0434\u043e \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f \u043b\u0435\u0433\u043a\u043e\u0433\u043e \u0430\u0440\u043e\u043c\u0430\u0442\u0430, \u0437\u0430\u0442\u0435\u043c \u0432\u044b\u043b\u043e\u0436\u0438\u0442\u044c \u0435\u0433\u043e \u043d\u0430 \u0441\u0442\u0435\u0439\u043a\u0438 \u0438\u0437 \u0433\u043e\u0432\u044f\u0434\u0438\u043d\u044b \u0438 \u0435\u0449\u0435 \u0440\u0430\u0437 \u043d\u0430\u043a\u0440\u044b\u0442\u044c \u043f\u0438\u0449\u0435\u0432\u043e\u0439 \u0444\u043e\u043b\u044c\u0433\u043e\u0439.\r\n\u0421\u043e\u0447\u043d\u044b\u0435 \u0433\u043e\u0432\u044f\u0436\u044c\u0438 \u0441\u0442\u0435\u0439\u043a\u0438 \u0441 \u043a\u0440\u0430\u0441\u043d\u043e\u0439 \u0444\u0430\u0441\u043e\u043b\u044c\u044e\r\n\r\n\u0412 \u0442\u0443 \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u0443, \u0433\u0434\u0435 \u0440\u0430\u043d\u0435\u0435 \u0433\u043e\u0442\u043e\u0432\u0438\u043b\u0441\u044f \u0447\u0435\u0441\u043d\u043e\u043a, \u0434\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0441\u043b\u0438\u0432\u043e\u0447\u043d\u043e\u0435 \u043c\u0430\u0441\u043b\u043e, \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0440\u0430\u0441\u0442\u043e\u043f\u0438\u0442\u044c \u0435\u0433\u043e, \u0434\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u0440\u043e\u043c\u044b\u0442\u0443\u044e \u043a\u043e\u043d\u0441\u0435\u0440\u0432\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u0443\u044e \u0444\u0430\u0441\u043e\u043b\u044c, \u0430 \u0442\u0430\u043a\u0436\u0435 \u0440\u0443\u0431\u043b\u0435\u043d\u0443\u044e \u043a\u0438\u043d\u0437\u0443 \u0438 \u0438\u0437\u043c\u0435\u043b\u044c\u0447\u0435\u043d\u043d\u044b\u0435 \u0432\u044f\u043b\u0435\u043d\u044b\u0435 \u043f\u043e\u043c\u0438\u0434\u043e\u0440\u044b, \u043e\u0431\u0436\u0430\u0440\u0438\u0432\u0430\u0442\u044c \u043a\u043e\u043c\u043f\u043e\u043d\u0435\u043d\u0442\u044b \u043d\u0430 \u0443\u043c\u0435\u0440\u0435\u043d\u043d\u043e\u043c \u043e\u0433\u043d\u0435 \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u0434\u0432\u0435 \u043c\u0438\u043d\u0443\u0442\u044b. \u0420\u0430\u0437\u043b\u043e\u0436\u0438\u0442\u044c \u043e\u0431\u0436\u0430\u0440\u0435\u043d\u043d\u0443\u044e \u0444\u0430\u0441\u043e\u043b\u044c \u0432\u043e\u043a\u0440\u0443\u0433 \u0433\u043e\u0432\u044f\u0436\u044c\u0438\u0445 \u0441\u0442\u0435\u0439\u043a\u043e\u0432, \u0437\u0430\u0442\u0435\u043c \u0443\u043a\u0440\u0430\u0441\u0438\u0442\u044c \u043f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u043b\u0435\u043d\u043d\u043e\u0435 \u043c\u044f\u0441\u043d\u043e\u0435 \u0431\u043b\u044e\u0434\u043e \u0432\u0435\u0442\u043e\u0447\u043a\u0430\u043c\u0438 \u043f\u0435\u0442\u0440\u0443\u0448\u043a\u0438 \u0438 \u0441\u0440\u0430\u0437\u0443 \u043f\u043e\u0434\u0430\u0432\u0430\u0442\u044c \u0441 \u043b\u044e\u0431\u044b\u043c \u0433\u0430\u0440\u043d\u0438\u0440\u043e\u043c.",
+            "image": "recipes/2.jpg",
+            "pub_date": "2020-11-16T22:23:12.092Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 7,
+        "fields": {
+            "author": 3,
+            "name": "\u0421\u043e\u0447\u043d\u044b\u0439 \u0431\u0443\u0440\u0433\u0435\u0440 \u0438\u0437 \u043c\u0440\u0430\u043c\u043e\u0440\u043d\u043e\u0439 \u0433\u043e\u0432\u044f\u0434\u0438\u043d\u044b",
+            "slug": "sochnyi-burger-iz-mramornoi-goviadiny",
+            "breakfast": false,
+            "lunch": true,
+            "dinner": true,
+            "cooking_time": 45,
+            "description": "\u041d\u0430\u0440\u0435\u0437\u0430\u0435\u043c \u0433\u043e\u0432\u044f\u0434\u0438\u043d\u0443 \u043a\u0443\u0431\u0438\u043a\u043e\u043c. \u041f\u0440\u043e\u043f\u0443\u0441\u043a\u0430\u0435\u043c \u0447\u0435\u0440\u0435\u0437 \u043c\u044f\u0441\u043e\u0440\u0443\u0431\u043a\u0443. \u0414\u043e\u0431\u0430\u0432\u043b\u044f\u0435\u043c \u044f\u0439\u0446\u043e, \u0441\u043e\u043b\u044c \u0438 \u043f\u0435\u0440\u0435\u0446. \u0424\u043e\u0440\u043c\u0438\u0440\u0443\u0435\u043c \u043a\u0440\u0443\u0433\u043b\u044b\u0435 \u043f\u043b\u043e\u0441\u043a\u0438\u0435 \u043a\u043e\u0442\u043b\u0435\u0442\u044b.\r\n\r\n\u0420\u0430\u0437\u043e\u0433\u0440\u0435\u0432\u0430\u0435\u043c \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u0443 \u0441 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u0438\u0435\u043c \u0440\u0430\u0441\u0442\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0433\u043e \u043c\u0430\u0441\u043b\u0430. \u041e\u0431\u0436\u0430\u0440\u0438\u0432\u0430\u0435\u043c \u043a\u043e\u0442\u043b\u0435\u0442\u044b \u0432 \u0442\u0435\u0447\u0435\u043d\u0438\u0435 8-10 \u043c\u0438\u043d\u0443\u0442.\r\n\r\n\u041d\u0430\u0440\u0435\u0437\u0430\u0435\u043c \u043a\u0430\u0440\u0442\u043e\u0444\u0435\u043b\u044c \u0441\u043e\u043b\u043e\u043c\u043a\u043e\u0439. \u041e\u0431\u0436\u0430\u0440\u0438\u0432\u0430\u0435\u043c \u0432\u043e \u0444\u0440\u0438\u0442\u044e\u0440\u0435 \u0434\u043e \u0437\u043e\u043b\u043e\u0442\u0438\u0441\u0442\u043e\u0439 \u043a\u043e\u0440\u043e\u0447\u043a\u0438. \u041f\u043e\u0441\u043e\u043b\u0438\u043c.\r\n\r\n\u0420\u0430\u0437\u0440\u0435\u0437\u0430\u0435\u043c \u0431\u0443\u043b\u043e\u0447\u043a\u0443 \u043d\u0430 2 \u0447\u0430\u0441\u0442\u0438. \u043f\u043e\u043c\u0435\u0449\u0430\u0435\u043c \u043c\u0435\u0436\u0434\u0443 \u043d\u0438\u043c\u0438 \u043a\u043e\u0442\u043b\u0435\u0442\u0443. \u0412\u044b\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u0435\u043c \u043d\u0430 \u0442\u0430\u0440\u0435\u043b\u043a\u0443! \u041f\u0440\u0438\u044f\u0442\u043d\u043e\u0433\u043e \u0430\u043f\u043f\u0435\u0442\u0438\u0442\u0430!",
+            "image": "recipes/3.jpg",
+            "pub_date": "2020-11-16T22:29:08.569Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 8,
+        "fields": {
+            "author": 3,
+            "name": "\u0421\u0442\u0435\u0439\u043a \u0441 \u0430\u0432\u043e\u043a\u0430\u0434\u043e",
+            "slug": "steik-s-avokado",
+            "breakfast": false,
+            "lunch": false,
+            "dinner": true,
+            "cooking_time": 35,
+            "description": "1. \u0414\u043e\u0441\u0442\u0430\u043d\u044c\u0442\u0435 \u0441\u0442\u0435\u0439\u043a \u0438\u0437 \u0445\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a\u0430 \u0437\u0430 \u0434\u0432\u0430 \u0447\u0430\u0441\u0430 \u0434\u043e \u0433\u043e\u0442\u043e\u0432\u043a\u0438 \u0438 \u0434\u0430\u0439\u0442\u0435 \u0435\u043c\u0443 \u0441\u043e\u0433\u0440\u0435\u0442\u044c\u0441\u044f \u0434\u043e \u043a\u043e\u043c\u043d\u0430\u0442\u043d\u043e\u0439 \u0442\u0435\u043c\u043f\u0435\u0440\u0430\u0442\u0443\u0440\u044b.\r\n\r\n2. \u0412\u043e\u0437\u044c\u043c\u0438\u0442\u0435 \u0447\u0443\u0433\u0443\u043d\u043d\u0443\u044e \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u0443 \u0441 \u0442\u043e\u043b\u0441\u0442\u044b\u043c \u0434\u043d\u043e\u043c \u0438 \u043f\u043e\u0441\u0442\u0430\u0432\u044c\u0442\u0435 \u043d\u0430 \u0441\u0440\u0435\u0434\u043d\u0435-\u0432\u044b\u0441\u043e\u043a\u0438\u0439 \u043e\u0433\u043e\u043d\u044c. \u041f\u0440\u043e\u043c\u043e\u043a\u043d\u0438\u0442\u0435 \u043c\u044f\u0441\u043e \u0432\u0430\u0444\u0435\u043b\u044c\u043d\u044b\u043c \u043f\u043e\u043b\u043e\u0442\u0435\u043d\u0446\u0435\u043c, \u0437\u0430\u0442\u0435\u043c \u0441\u043c\u0430\u0436\u044c\u0442\u0435 \u043d\u0435\u0431\u043e\u043b\u044c\u0448\u0438\u043c \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e\u043c \u0440\u0430\u0444\u0438\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0433\u043e \u043c\u0430\u0441\u043b\u0430 \u0441 \u0434\u0432\u0443\u0445 \u0441\u0442\u043e\u0440\u043e\u043d. \u0422\u0435\u043c \u0432\u0440\u0435\u043c\u0435\u043d\u0435\u043c \u0440\u0430\u0432\u043d\u043e\u043c\u0435\u0440\u043d\u043e \u0440\u0430\u0441\u0441\u044b\u043f\u044c\u0442\u0435 \u043f\u043e \u0442\u0430\u0440\u0435\u043b\u043a\u0435 \u0441\u043e\u043b\u044c \u0438 \u043f\u0435\u0440\u0435\u0446, \u043e\u0431\u0432\u0430\u043b\u044f\u0439\u0442\u0435 \u0432 \u0441\u043c\u0435\u0441\u0438 \u0441\u0442\u0435\u0439\u043a, \u0438 \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0430\u0439\u0442\u0435 \u043d\u0430 \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u0443. \u0413\u043e\u0442\u043e\u0432\u044c\u0442\u0435 \u043f\u043e 60-90 \u0441\u0435\u043a\u0443\u043d\u0434 \u0441 \u043a\u0430\u0436\u0434\u043e\u0439 \u0441\u0442\u043e\u0440\u043e\u043d\u044b, \u043d\u0430\u0434\u0430\u0432\u043b\u0438\u0432\u0430\u044f \u0449\u0438\u043f\u0446\u0430\u043c\u0438, \u043f\u043e\u043a\u0430 \u043e\u043d \u043d\u0435 \u0441\u0442\u0430\u043d\u0435\u0442 \u0440\u0430\u0432\u043d\u043e\u043c\u0435\u0440\u043d\u043e \u043f\u043e\u0434\u0440\u0443\u043c\u044f\u043d\u0435\u043d\u043d\u044b\u043c.\r\n\r\n3. \u0427\u0443\u0442\u044c \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435 \u043e\u0433\u043e\u043d\u044c, \u0434\u043e\u0431\u0430\u0432\u044c\u0442\u0435 \u043d\u0430 \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u0443 \u0447\u0435\u0441\u043d\u043e\u043a, \u043c\u0430\u0441\u043b\u043e \u0438 \u0442\u0438\u043c\u044c\u044f\u043d, \u0438 \u043a\u043e\u0433\u0434\u0430 \u0432\u0441\u0435 \u0440\u0430\u0441\u0442\u0430\u0435\u0442, \u043f\u0435\u0440\u0435\u043c\u0435\u0448\u0430\u0439\u0442\u0435 \u0438 \u043f\u043e\u043b\u0438\u0432\u0430\u0439\u0442\u0435 \u0441\u043c\u0435\u0441\u044c\u044e \u0441\u0442\u0435\u0439\u043a. \u0427\u0435\u0442\u044b\u0440\u0435\u0445\u0441\u0430\u043d\u0442\u0438\u043c\u0435\u0442\u0440\u043e\u0432\u044b\u0439 \u0440\u0438\u0431\u0430\u0439 \u0431\u0443\u0434\u0435\u0442 \u0433\u043e\u0442\u043e\u0432\u0438\u0442\u044c\u0441\u044f \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e 6 \u043c\u0438\u043d\u0443\u0442 \u0434\u043e medium rare.\r\n\r\n4. \u0421\u043d\u0438\u043c\u0438\u0442\u0435 \u0441\u0442\u0435\u0439\u043a \u0420\u0438\u0431\u0430\u0439 \u0441\u043e \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u044b \u0438 \u0432\u044b\u043b\u043e\u0436\u0438\u0442\u0435 \u043d\u0430 \u0447\u0442\u043e-\u043d\u0438\u0431\u0443\u0434\u044c \u0442\u0435\u043f\u043b\u043e\u0435 \u2014 \u0440\u0430\u0437\u043e\u0433\u0440\u0435\u0442\u0443\u044e \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u0443 \u0438\u043b\u0438 \u0434\u043e\u0449\u0435\u0447\u043a\u0443, \u0447\u0442\u043e\u0431\u044b \u043e\u043d \u043e\u0442\u0434\u043e\u0445\u043d\u0443\u043b 5\u201310 \u043c\u0438\u043d\u0443\u0442 \u043f\u0435\u0440\u0435\u0434 \u043f\u043e\u0434\u0430\u0447\u0435\u0439.",
+            "image": "recipes/4.jpg",
+            "pub_date": "2020-11-16T22:32:23.604Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 9,
+        "fields": {
+            "author": 5,
+            "name": "\u0413\u043e\u043b\u0443\u0431\u0430\u044f \u0444\u043e\u0440\u0435\u043b\u044c \u0441 \u043e\u0432\u043e\u0449\u0430\u043c\u0438",
+            "slug": "golubaia-forel-s-ovoshchami",
+            "breakfast": false,
+            "lunch": true,
+            "dinner": true,
+            "cooking_time": 50,
+            "description": "\u0421\u043c\u0430\u0437\u0430\u0442\u044c \u043c\u0430\u0441\u043b\u043e\u043c \u0451\u043c\u043a\u043e\u0441\u0442\u044c \u0434\u043b\u044f \u0437\u0430\u043f\u0435\u043a\u0430\u043d\u0438\u044f,\u0432\u044b\u043b\u043e\u0436\u0438\u0442\u044c \u043e\u0432\u043e\u0449\u0438.\r\n\r\n\u0420\u044b\u0431\u0443 \u0441\u0431\u0440\u044b\u0437\u043d\u0435\u043c \u043b\u0438\u043c\u043e\u043d\u043d\u044b\u043c \u0441\u043e\u043a\u043e\u043c, \u043f\u043e\u0441\u043e\u043b\u0438\u043c, \u043f\u043e\u0441\u044b\u043f\u0435\u043c \u043f\u0440\u0438\u043f\u0440\u0430\u0432\u0430\u043c\u0438 \u0438 \u0432\u044b\u043b\u043e\u0436\u0438\u043c \u043d\u0430 \u043e\u0432\u043e\u0449\u0438.\r\n\r\n\u0421\u0442\u0430\u0432\u0438\u043c \u0432 \u0434\u0443\u0445\u043e\u0432\u043a\u0443 180* \u043f\u0440\u0438\u043c\u0435\u0440\u043d\u043e \u043d\u0430 45 \u043c\u0438\u043d.",
+            "image": "recipes/5.jpg",
+            "pub_date": "2020-11-16T22:39:30.466Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 10,
+        "fields": {
+            "author": 5,
+            "name": "\u042f\u0438\u0447\u043d\u0438\u0446\u0430 \u0441 \u043a\u043e\u043b\u0431\u0430\u0441\u043a\u0430\u043c\u0438 \u0438 \u0433\u0440\u0438\u0431\u0430\u043c\u0438",
+            "slug": "iaichnitsa-s-kolbaskami-i-gribami",
+            "breakfast": true,
+            "lunch": true,
+            "dinner": false,
+            "cooking_time": 15,
+            "description": "\u041d\u0430 \u0440\u0430\u0437\u043e\u0433\u0440\u0435\u0442\u0443\u044e \u0441 \u043c\u0430\u0441\u043b\u043e\u043c \u0441\u043a\u043e\u0432\u043e\u0440\u043e\u0434\u0443 \u0432\u044b\u043b\u043e\u0436\u0438\u0442\u044c \u043c\u043e\u0440\u043e\u0436\u0435\u043d\u043d\u0443\u044e \u0444\u0430\u0441\u043e\u043b\u044c, \u043d\u0430\u0440\u0435\u0437\u0430\u0442\u044c \u043f\u043b\u0430\u0441\u0442\u0438\u043d\u043a\u0430\u043c\u0438 \u0433\u0440\u0438\u0431\u044b, \u043f\u043e\u0441\u043e\u043b\u0438\u0442\u044c \u0438 \u043f\u043e\u0434 \u043a\u0440\u044b\u0448\u043a\u043e\u0439 \u0442\u0443\u0448\u0438\u0442\u044c \u0434\u043e \u0438\u0441\u043f\u0430\u0440\u0435\u043d\u0438\u044f \u0436\u0438\u0434\u043a\u043e\u0441\u0442\u0438.\r\n\r\n\u0420\u0430\u0437\u0431\u0438\u0442\u044c \u044f\u0439\u0446\u0430, \u0447\u0443\u0442\u044c \u043f\u043e\u0441\u043e\u043b\u0438\u0442\u044c(\u043f\u043e \u0436\u0435\u043b\u0430\u043d\u0438\u044e), \u0437\u0430\u0441\u044b\u043f\u0430\u0442\u044c \u043f\u0435\u0442\u0440\u0443\u0448\u043a\u043e\u0439 \u0438 \u0434\u043e\u0432\u043e\u0434\u0438\u043c \u0434\u043e \u0433\u043e\u0442\u043e\u0432\u043d\u043e\u0441\u0442\u0438 \u044f\u0438\u0446. \u041f\u0440\u0438\u044f\u0442\u043d\u043e\u0433\u043e \u0430\u043f\u043f\u0435\u0442\u0438\u0442\u0430!",
+            "image": "recipes/6.jpg",
+            "pub_date": "2020-11-16T22:42:39.633Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 11,
+        "fields": {
+            "author": 5,
+            "name": "\u041f\u043e\u043b\u0435\u0437\u043d\u044b\u0439 \u0437\u0430\u0432\u0442\u0440\u0430\u043a",
+            "slug": "poleznyi-zavtrak",
+            "breakfast": true,
+            "lunch": false,
+            "dinner": false,
+            "cooking_time": 10,
+            "description": "\u0411\u0430\u043d\u0430\u043d\u044b. \u042f \u043e\u0431\u044b\u0447\u043d\u043e \u043e\u0447\u0438\u0449\u0430\u044e \u0438\u0445 \u043e\u0442 \u043a\u043e\u0436\u0443\u0440\u044b, \u0440\u0430\u0437\u0440\u0435\u0437\u0430\u044e \u0432\u0434\u043e\u043b\u044c, \u0437\u0430\u0442\u0435\u043c \u044d\u0442\u0438 \u0436\u0435 \u043f\u043e\u043b\u043e\u0432\u0438\u043d\u043a\u0438 \u0440\u0430\u0437\u0440\u0435\u0437\u0430\u044e \u043e\u043f\u044f\u0442\u044c \u0432\u0434\u043e\u043b\u044c, \u0437\u0430\u0442\u0435\u043c \u043d\u0430\u0440\u0435\u0437\u0430\u044e \u043d\u0430 \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u0438\u0435 \u043a\u0443\u0441\u043e\u0447\u043a\u0438 \u0438 \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u044e \u0432 \u043e\u0431\u0449\u0443\u044e \u0441\u043c\u0435\u0441\u044c. \u041c\u043e\u0436\u043d\u043e \u043d\u0430\u0440\u0435\u0437\u0430\u0442\u044c \u043a\u0440\u0443\u0436\u043a\u0430\u043c\u0438 \u0438 \u043f\u0435\u0440\u0435\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u0442\u044c \u0441\u043b\u043e\u044f\u043c\u0438 \u2014 \u0431\u0430\u043d\u0430\u043d\u044b, \u043c\u0430\u0441\u0441\u0430, \u0431\u0430\u043d\u0430\u043d\u044b, \u043c\u0430\u0441\u0441\u0430 \u0438 .\u0442.\u0434\r\n\r\n\u0410 \u0442\u0435\u043f\u0435\u0440\u044c \u0441\u0430\u043c\u043e\u0435 \u0438\u043d\u0442\u0435\u0440\u0435\u0441\u043d\u043e\u0435. \u0412\u044b\u043a\u043b\u0430\u0434\u044b\u0432\u0430\u0435\u043c \u043c\u0430\u0441\u0441\u0443 \u0438 \u0431\u0430\u043d\u0430\u043d\u044b \u0432 \u0435\u043c\u043a\u043e\u0441\u0442\u044c \u0434\u043b\u044f \u0440\u0438\u0441\u0430 (\u043f\u0440\u043e\u0434\u0430\u0435\u0442\u0441\u044f \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u043f\u0430\u0440\u043e\u0432\u0430\u0440\u043a\u043e\u0439). \u041d\u0430\u043a\u0440\u044b\u0432\u0430\u0435\u043c \u0441\u0432\u0435\u0440\u0445\u0443 \u0444\u043e\u043b\u044c\u0433\u043e\u0439 \u0438 \u0441\u0442\u0430\u0432\u0438\u043c \u043d\u0430 1 \u044f\u0440\u0443\u0441 \u043f\u0430\u0440\u043e\u0432\u0430\u0440\u043a\u0438. \u0421\u0442\u0430\u0432\u0438\u043c \u0442\u0430\u0439\u043c\u0435\u0440 \u043d\u0430 30\u201335 \u043c\u0438\u043d\u0443\u0442.",
+            "image": "recipes/13.jpg",
+            "pub_date": "2020-11-16T22:46:47.358Z"
+        }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 12,
+        "fields": {
+            "author": 5,
+            "name": "\u042f\u0433\u043e\u0434\u043d\u044b\u0439 \u043c\u0438\u043a\u0441",
+            "slug": "iagodnyi-miks",
+            "breakfast": true,
+            "lunch": false,
+            "dinner": false,
+            "cooking_time": 10,
+            "description": "\u0411\u0435\u0440\u0435\u043c 2 \u043f\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0445 \u043c\u0430\u043d\u0434\u0430\u0440\u0438\u043d\u0430 \u0438 \u0431\u0430\u043d\u0430\u043d. \u0412\u0437\u0431\u0438\u0432\u0430\u0435\u043c \u0432\u0441\u0435 \u0434\u043e \u043e\u0434\u043d\u043e\u0440\u043e\u0434\u043d\u043e\u0439 \u043a\u043e\u043d\u0441\u0438\u0441\u0442\u0435\u043d\u0446\u0438\u0438 \u0438 \u0433\u043e\u0442\u043e\u0432\u043e!\r\n    \u041f\u0440\u0438 \u0436\u0435\u043b\u0430\u043d\u0438\u0438 \u0431\u0430\u043d\u0430\u043d \u0441 \u0432\u0435\u0447\u0435\u0440\u0430 \u043c\u043e\u0436\u043d\u043e \u0437\u0430\u043c\u043e\u0440\u043e\u0437\u0438\u0442\u044c, \u0438 \u043c\u044b \u043f\u043e\u043b\u0443\u0447\u0438\u043c \u0431\u043e\u043b\u0435\u0435 \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u043d\u0443\u044e \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0443, \u0442\u0430\u043a \u043a\u0430\u043a \u0442\u0435\u043f\u043b\u044b\u0439 \u043e\u043d \u0438\u0437\u043c\u0435\u043b\u044c\u0447\u0438\u0442\u0441\u044f \u0432 \u043f\u0430\u0441\u0442\u0443.\r\n    \u0412 \u0442\u0430\u043a\u043e\u0439 \u043f\u0440\u043e\u043f\u043e\u0440\u0446\u0438\u0438 \u043d\u0430\u043f\u0438\u0442\u043e\u043a \u043c\u043e\u0436\u043d\u043e \u043d\u0435 \u0441\u043b\u0430\u0434\u0438\u0442\u044c, \u043d\u043e \u0435\u0441\u043b\u0438 \u043c\u0430\u043d\u0434\u0430\u0440\u0438\u043d\u044b \u043f\u043e\u043f\u0430\u043b\u0438\u0441\u044c \u0441\u043e\u0432\u0441\u0435\u043c \u043a\u0438\u0441\u043b\u044b\u0435, \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u0435\u043c \u043d\u0435\u043c\u043d\u043e\u0433\u043e \u043c\u0435\u0434\u0430, \u0441\u0442\u0435\u0432\u0438\u0438 \u0438\u043b\u0438 \u0441\u0438\u0440\u043e\u043f\u0430 (\u043a\u043b\u0435\u043d\u043e\u0432\u043e\u0433\u043e \u0438\u043b\u0438 \u0430\u0433\u0430\u0432\u044b). \u0415\u0441\u043b\u0438 \u043d\u0438\u043a\u0430\u043a\u0438\u0445 \u043f\u043e\u0434\u0445\u043e\u0434\u044f\u0449\u0438\u0445 \u043f\u043e\u0434\u0441\u043b\u0430\u0441\u0442\u0438\u0442\u0435\u043b\u0435\u0439 \u043d\u0435\u0442, \u0434\u043e\u0431\u0430\u0432\u0438\u043c 2-3 \u0441\u0443\u0448\u0435\u043d\u044b\u0445 \u0444\u0438\u043d\u0438\u043a\u0430 \u0438 \u0441\u043d\u043e\u0432\u0430 \u0432\u0437\u043e\u0431\u044c\u0435\u043c. \u0418\u0445 \u043f\u0440\u0438\u0442\u043e\u0440\u043d\u044b\u0439 \u0432\u043a\u0443\u0441 \u043f\u0440\u0438\u0434\u0430\u0435\u0442 \u0441\u044b\u0440\u044b\u043c \u0431\u043b\u044e\u0434\u0430\u043c \u0437\u0430\u043c\u0435\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043a\u0430\u0440\u0430\u043c\u0435\u043b\u044c\u043d\u044b\u0439 \u043e\u0442\u0442\u0435\u043d\u043e\u043a.",
+            "image": "recipes/15.jpg",
+            "pub_date": "2020-11-16T22:51:19.124Z"
+        }
+    },
+    {
+        "model": "recipes.subscription",
+        "pk": 3,
+        "fields": {
+            "user": 5,
+            "author": 3
+        }
+    },
+    {
+        "model": "recipes.favorite",
+        "pk": 5,
+        "fields": {
+            "user": 4,
+            "recipe": 5
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2020-11-16T21:24:26.042Z",
+            "user": 2,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "/about-author/ -- \u041e\u0431 \u0430\u0432\u0442\u043e\u0440\u0435",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2020-11-16T21:24:59.841Z",
+            "user": 2,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "/about-author/ -- \u041e\u0431 \u0430\u0432\u0442\u043e\u0440\u0435",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2020-11-16T21:25:57.581Z",
+            "user": 2,
+            "content_type": 13,
+            "object_id": "2",
+            "object_repr": "/about-spec/ -- \u0412 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u044b",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2020-11-16T21:27:05.454Z",
+            "user": 2,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "/about-author/ -- \u041e\u0431 \u0430\u0432\u0442\u043e\u0440\u0435",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2020-11-16T21:28:01.279Z",
+            "user": 2,
+            "content_type": 4,
+            "object_id": "2",
+            "object_repr": "\u044f\u0438\u0447\u043d\u0438\u0446\u0430",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2020-11-16T21:51:49.186Z",
+            "user": 2,
+            "content_type": 1,
+            "object_id": "2",
+            "object_repr": "admin",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"first_name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2020-11-16T21:51:58.704Z",
+            "user": 2,
+            "content_type": 1,
+            "object_id": "1",
+            "object_repr": "serge",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    }
+    ]
+    
